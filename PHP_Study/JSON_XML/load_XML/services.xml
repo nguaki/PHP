@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!-- Sample XML document -->
+<Services>
+	<Service>
+		<Description>Daily assistance with bathing and dressing</Description>
+	</Service>
+	<Service>
+		<Description>Medication management</Description>
+	</Service>
+	<Service>
+		<Description>Laundry</Description>
+	</Service>
+	<Service>
+		<Description>Grooming needs</Description>
+	</Service>
+	<Service>
+		<Description>wi-fi</Description>
+	</Service>
+	<Service>
+		<Description>pets allowed</Description>
+	</Service>
+	<Service>
+		<Description>smoking allowed indoor</Description>
+	</Service>
+</Services>

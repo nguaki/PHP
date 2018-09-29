@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Add a Topic</title>
+</head>
+<body>
+<h1>Add a Topic</h1>
+        <form method="post" action="add_a_topic.php">
+
+                <!-- The purpose of <p> is two folds:           -->
+                <!-- 1. It makes 3 inputs align.                -->
+                <!-- 2. The <p>  </p> becomes 1 block. It can be utilized in conjuction with css. -->
+                <!--  e.g.  USing CSS, the program can color the whole background with a color.   -->
+                <p><label for="topic_owner">Your Email Address:</label><br/>  <!--type="email" checks for '@' character.-->
+                <input type="email" id="topic_owner" name="topic_owner" size="40    
+                        maxlength="150" required="required" /></p>
+
+                <p><label for="topic_title">Topic Title:</label><br/>  <!--Interesting why for, id name all have "topic_title".-->
+                <input type="text" id="topic_title" name="topic_title" size="40"
+                        maxlength="150" required="required" /></p>
+
+                <p><label for="post_text">Post Text:</label><br/>  <!--Interesting why for, id, name all have "post_text". Don't see why label needs it.-->
+                <textarea id="post_text" name="post_text" rows="8"    cols="40" ></textarea></p>
+
+                <button type="submit" name="submit" value="submit">Add Topic</button>
+
+        </form>
+</body>
+</html>

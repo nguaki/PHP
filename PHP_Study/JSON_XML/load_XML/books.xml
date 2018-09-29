@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!-- Sample XML document -->
+<Books>
+	<Book>
+		<Title>A very Good Book</Title>
+		<Author>Jane Doe</Author>
+		<PublishingInfo>
+			<PublisherName>Sams Publishing</PublisherName>
+			<PublisherCity>Indianapolis</PublisherCity>
+			<PublishedYear>2012</PublishedYear>
+		</PublishingInfo>
+	</Book>
+	<Book>
+		<Title>Bible</Title>
+		<Author>Holy Spirit</Author>
+		<PublishingInfo>
+			<PublisherName>Unknown</PublisherName>
+			<PublisherCity>Unknown</PublisherCity>
+			<PublishedYear>5000BC</PublishedYear>
+		</PublishingInfo>
+	</Book>
+</Books>
