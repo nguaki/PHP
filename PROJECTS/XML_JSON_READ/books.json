@@ -1,0 +1,14 @@
+{
+	"1":{
+			"title":"A Very Good Book",
+			"body":"Jane Doe"
+		},
+	"2":{
+			"title":"An Academic Book",
+			"body":"Ann Smith"
+		},
+	"3":{
+			"title":"Some Fluff Fiction",
+			"body":"Jimbo Jones"
+		}
+}	

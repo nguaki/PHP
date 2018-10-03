@@ -1,0 +1,26 @@
+
+
+    if( $line =~ /^\s*if\s*\(.*[^!<>=]=([^=].*\)|\))/  ) 
+	
+	/^\s*if\s*\(.*[^!<>=]=([^=].*\)|\))/
+	
+	//   \   beginning of search
+	//   ^   beginning of a string
+	//   \s* 0 or more space
+	//   if  if characters
+	//   \s* 0 or more space
+	//   \(  beginning of a literal parenthesis
+	//   .*  0 or more characters
+	//   [ ] class set with ^!<>=  elements
+	//   =   = character
+	//   ( ) beginning of capturing into a memory   
+	
+	
+	
+	{
+        if(!$badfound) {
+            print("The following suspicious lines were found:\n");
+            $badfound = 1;
+        }
+        print "$fn:$.: $line\n";
+    }

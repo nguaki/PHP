@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Guessing game </title>
+</head>
+<body>
+
+	<!--Q:Why echo statement is needed here?  -->
+	<form action="main.php"  method="POST">
+		
+		<p>
+		<input type="radio" name="format_type" value="xml"/>xml
+		<input type="radio" name="format_type" value="json"/>json
+		</p>	
+		<p>
+		<select name="record_id" size="3" multiple="multiple">
+			<option value="1" selected="selected">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+		</select>	
+		</p>	
+		<p>
+		<button type="submit" name="submit" value="submit">Submit</button>
+		</p>	
+	</form>
+</body>
+</html>

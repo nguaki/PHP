@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+<!-- Sample XML document -->
+<!-- rss is like HTML.  It starts with 'channel' tag and also has 'title' and 'body' tags. -->
+<channel>
+	<item>
+		<title>How to PHP</title>
+		<body>James Che</body>
+	</item>
+	<item>
+		<title>Bible</title>
+		<body>Holy Spirit</body>
+	</item>
+	<item>
+		<title>How to play basketball</title>
+		<body>By Matthew Che</body>
+	</item>
+</channel>
+</rss>
