@@ -1,0 +1,17 @@
+[02-Oct-2018 19:44:46 UTC] PHP Warning:  require_once(../config/Config.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/URL_Project/DB/db_connect_PDO.php on line 3
+[02-Oct-2018 19:44:46 UTC] PHP Stack trace:
+[02-Oct-2018 19:44:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/URL_Project/DB/db_connect_PDO.php:0
+[02-Oct-2018 19:44:46 UTC] PHP Fatal error:  require_once(): Failed opening required '../config/Config.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/URL_Project/DB/db_connect_PDO.php on line 3
+[02-Oct-2018 19:44:46 UTC] PHP Stack trace:
+[02-Oct-2018 19:44:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/URL_Project/DB/db_connect_PDO.php:0
+[02-Oct-2018 19:46:13 UTC] PHP Warning:  require_once(../functions/sanitize.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/URL_Project/config/Config.php on line 26
+[02-Oct-2018 19:46:13 UTC] PHP Stack trace:
+[02-Oct-2018 19:46:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/URL_Project/DB/db_connect_PDO.php:0
+[02-Oct-2018 19:46:13 UTC] PHP   2. require_once() /home/ubuntu/workspace/URL_Project/DB/db_connect_PDO.php:3
+[02-Oct-2018 19:46:13 UTC] PHP Fatal error:  require_once(): Failed opening required '../functions/sanitize.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/URL_Project/config/Config.php on line 26
+[02-Oct-2018 19:46:13 UTC] PHP Stack trace:
+[02-Oct-2018 19:46:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/URL_Project/DB/db_connect_PDO.php:0
+[02-Oct-2018 19:46:13 UTC] PHP   2. require_once() /home/ubuntu/workspace/URL_Project/DB/db_connect_PDO.php:3
+[02-Oct-2018 19:46:59 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/URL_Project/config/Config.php on line 15
+[02-Oct-2018 19:46:59 UTC] PHP Stack trace:
+[02-Oct-2018 19:46:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/URL_Project/DB/db_connect_PDO.php:0
