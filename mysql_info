@@ -1,0 +1,5 @@
+mysql cli
+
+use dblogin;
+show tables;
+

@@ -1,3 +1,1 @@
-<?php
-
-?>
+There is no such page.

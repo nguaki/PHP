@@ -1,0 +1,92 @@
+FILE STRUCTURE
+--------------------
+
+
+
+Modify core/init.php
+
+	//'host' => '127.0.0.1',
+    'host' => getenv('IP'),
+	//'username' => 'root',
+	'username' => getenv('C9_USER'),
+	'password' => '',
+	'db' => 'dblogin',
+	'dbport' => 3306
+	
+Database table relationship
+------------------------------
+
+
+Create table using following scripts
+------------------------------------------
+
+Create indes using following script
+-----------------------------------------
+
+
+Enter these data using these scripts
+--------------------------------------
+
+
+You can enter more data through registration.
+
+
+
+Layers of security
+-------------------
+FIEO - Filter In Escape Out was practiced.
+All inputs are filterd and all outputs to the brower were escaped.
+
+Another layer of SQL injection was implemented with implementation of 
+PDO prepare statement and binding valuew.
+
+CSRF injection prevention was implemented with token checks.
+
+Performance
+---------------
+Implementation of Singleton should eliminate unnecessary DB connection.
+
+Testability
+---------------
+Try to follow SOLID principle.
+Single responsibility per class per method.
+Should be easy to test.
+Please refer to test strategy of each module.
+
+Maintainability of code
+-------------------------
+- Code is written such to reduce the coupling.
+  This means that one change should reduce the impact of other objects.
+  
+-Usage of core/init.php spl_autoload_register() eliminates the need to 
+ declare require_once() on individual files.
+ 
+-Config related data is stored in core/init.php.
+ Finding the value in O(1) by hash map traversing is defined in classes/Config.php.
+ 
+-Each class and each method is well documented. 
+
+
+Objects Relationship
+--------------------------
+No inheritance, no polymorphism, no composition.
+Objects 'uses' other objects.
+There are # objects with static functions.
+Since variables and functions are within scope
+there won't be any collisions.
+
+Objects Relationship Diagram
+-------------------------------
+
+
+Design Pattern:
+--------------------
+Uses Singleton Design pattern.
+This will enhance the effectiveness DB connection.
+Remember DB connection is the most expensive.
+
+DB.php
+------
+This class packages SQL and executes SQL.
+This class avoids the code to implement tedious implementation of SQL statement.
+It is a wrapper to SQL.

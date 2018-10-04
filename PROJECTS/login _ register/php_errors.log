@@ -1,0 +1,415 @@
+[03-Oct-2018 16:10:38 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php on line 4
+[03-Oct-2018 16:12:03 UTC] PHP Warning:  require_once(core/init.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php on line 2
+[03-Oct-2018 16:12:03 UTC] PHP Stack trace:
+[03-Oct-2018 16:12:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 16:12:03 UTC] PHP Fatal error:  require_once(): Failed opening required 'core/init.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php on line 2
+[03-Oct-2018 16:12:03 UTC] PHP Stack trace:
+[03-Oct-2018 16:12:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 16:15:24 UTC] PHP Warning:  require_once(/home/ubuntu/workspace/PROJECTS/login _ register/includes/core/init.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php on line 4
+[03-Oct-2018 16:15:24 UTC] PHP Stack trace:
+[03-Oct-2018 16:15:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 16:15:24 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/PROJECTS/login _ register/includes/core/init.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php on line 4
+[03-Oct-2018 16:15:24 UTC] PHP Stack trace:
+[03-Oct-2018 16:15:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 16:19:10 UTC] PHP Warning:  require_once(/home/ubuntu/workspace/PROJECTS/login _ register/includes../core/init.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php on line 4
+[03-Oct-2018 16:19:10 UTC] PHP Stack trace:
+[03-Oct-2018 16:19:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 16:19:10 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/PROJECTS/login _ register/includes../core/init.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php on line 4
+[03-Oct-2018 16:19:10 UTC] PHP Stack trace:
+[03-Oct-2018 16:19:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 16:49:33 UTC] PHP Fatal error:  Call to undefined function get() in /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php on line 8
+[03-Oct-2018 16:49:33 UTC] PHP Stack trace:
+[03-Oct-2018 16:49:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 16:49:34 UTC] PHP Fatal error:  Call to undefined function get() in /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php on line 8
+[03-Oct-2018 16:49:34 UTC] PHP Stack trace:
+[03-Oct-2018 16:49:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 17:20:28 UTC] PHP Parse error:  syntax error, unexpected '(', expecting '{' in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Validate.php on line 3
+[03-Oct-2018 17:20:28 UTC] PHP Stack trace:
+[03-Oct-2018 17:20:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 17:20:28 UTC] PHP   2. spl_autoload_call(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:10
+[03-Oct-2018 17:20:28 UTC] PHP   3. {closure:/home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:22-24}($class = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:10
+[03-Oct-2018 17:21:47 UTC] PHP Parse error:  syntax error, unexpected '(', expecting '{' in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Validate.php on line 3
+[03-Oct-2018 17:21:47 UTC] PHP Stack trace:
+[03-Oct-2018 17:21:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 17:21:47 UTC] PHP   2. spl_autoload_call(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:10
+[03-Oct-2018 17:21:47 UTC] PHP   3. {closure:/home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:22-24}($class = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:10
+[03-Oct-2018 17:22:33 UTC] PHP Fatal error:  Cannot redeclare DB::update() in /home/ubuntu/workspace/PROJECTS/login _ register/classes/DB.php on line 175
+[03-Oct-2018 17:22:33 UTC] PHP Stack trace:
+[03-Oct-2018 17:22:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 17:22:33 UTC] PHP   2. Validate->__construct() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:10
+[03-Oct-2018 17:22:33 UTC] PHP   3. spl_autoload_call(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:9
+[03-Oct-2018 17:22:33 UTC] PHP   4. {closure:/home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:22-24}($class = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:9
+[03-Oct-2018 17:24:23 UTC] PHP Fatal error:  Cannot redeclare DB::error() in /home/ubuntu/workspace/PROJECTS/login _ register/classes/DB.php on line 175
+[03-Oct-2018 17:24:23 UTC] PHP Stack trace:
+[03-Oct-2018 17:24:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 17:24:23 UTC] PHP   2. Validate->__construct() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:10
+[03-Oct-2018 17:24:23 UTC] PHP   3. spl_autoload_call() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:9
+[03-Oct-2018 17:24:23 UTC] PHP   4. {closure:/home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:22-24}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:9
+[03-Oct-2018 17:25:16 UTC] PHP Fatal error:  Cannot redeclare DB::results() in /home/ubuntu/workspace/PROJECTS/login _ register/classes/DB.php on line 175
+[03-Oct-2018 17:25:16 UTC] PHP Stack trace:
+[03-Oct-2018 17:25:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 17:25:16 UTC] PHP   2. Validate->__construct() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:10
+[03-Oct-2018 17:25:16 UTC] PHP   3. spl_autoload_call() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:9
+[03-Oct-2018 17:25:16 UTC] PHP   4. {closure:/home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:22-24}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:9
+[03-Oct-2018 17:25:53 UTC] PHP Fatal error:  Cannot redeclare DB::first() in /home/ubuntu/workspace/PROJECTS/login _ register/classes/DB.php on line 175
+[03-Oct-2018 17:25:53 UTC] PHP Stack trace:
+[03-Oct-2018 17:25:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 17:25:53 UTC] PHP   2. Validate->__construct() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:10
+[03-Oct-2018 17:25:53 UTC] PHP   3. spl_autoload_call(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:9
+[03-Oct-2018 17:25:53 UTC] PHP   4. {closure:/home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:22-24}($class = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:9
+[03-Oct-2018 17:33:04 UTC] PHP Fatal error:  Call to a member function passed() on a non-object in /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php on line 33
+[03-Oct-2018 17:33:04 UTC] PHP Stack trace:
+[03-Oct-2018 17:33:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 17:34:11 UTC] PHP Fatal error:  Call to a member function passed() on a non-object in /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php on line 33
+[03-Oct-2018 17:34:11 UTC] PHP Stack trace:
+[03-Oct-2018 17:34:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 18:04:14 UTC] PHP Fatal error:  Call to a member function passed() on a non-object in /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php on line 33
+[03-Oct-2018 18:04:14 UTC] PHP Stack trace:
+[03-Oct-2018 18:04:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 18:05:59 UTC] PHP Fatal error:  Call to a member function passed() on a non-object in /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php on line 33
+[03-Oct-2018 18:05:59 UTC] PHP Stack trace:
+[03-Oct-2018 18:05:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 18:06:53 UTC] PHP Fatal error:  Cannot access empty property in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Validate.php on line 29
+[03-Oct-2018 18:06:53 UTC] PHP Stack trace:
+[03-Oct-2018 18:06:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 18:06:53 UTC] PHP   2. Validate->passed() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:33
+[03-Oct-2018 18:08:07 UTC] PHP Fatal error:  Cannot access empty property in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Validate.php on line 29
+[03-Oct-2018 18:08:07 UTC] PHP Stack trace:
+[03-Oct-2018 18:08:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 18:08:07 UTC] PHP   2. Validate->passed() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:33
+[03-Oct-2018 18:13:13 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Validate.php on line 24
+[03-Oct-2018 18:13:13 UTC] PHP Stack trace:
+[03-Oct-2018 18:13:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 18:13:13 UTC] PHP   2. spl_autoload_call(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:10
+[03-Oct-2018 18:13:13 UTC] PHP   3. {closure:/home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:25-27}($class = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:10
+[03-Oct-2018 18:24:17 UTC] PHP Fatal error:  Cannot use [] for reading in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Validate.php on line 34
+[03-Oct-2018 18:24:17 UTC] PHP Stack trace:
+[03-Oct-2018 18:24:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 18:24:17 UTC] PHP   2. spl_autoload_call(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:10
+[03-Oct-2018 18:24:17 UTC] PHP   3. {closure:/home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:25-27}($class = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:10
+[03-Oct-2018 18:35:59 UTC] PHP Fatal error:  Call to undefined method Validate::errors() in /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php on line 38
+[03-Oct-2018 18:35:59 UTC] PHP Stack trace:
+[03-Oct-2018 18:35:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 18:53:40 UTC] PHP Parse error:  syntax error, unexpected 'break' (T_BREAK) in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Validate.php on line 28
+[03-Oct-2018 18:53:40 UTC] PHP Stack trace:
+[03-Oct-2018 18:53:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 18:53:40 UTC] PHP   2. spl_autoload_call(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:9
+[03-Oct-2018 18:53:40 UTC] PHP   3. {closure:/home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:25-27}($class = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:9
+[03-Oct-2018 18:54:28 UTC] PHP Fatal error:  Call to undefined method Validate::addErros() in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Validate.php on line 27
+[03-Oct-2018 18:54:28 UTC] PHP Stack trace:
+[03-Oct-2018 18:54:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 18:54:28 UTC] PHP   2. Validate->check($source = *uninitialized*, $items = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:31
+[03-Oct-2018 19:52:07 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Validate.php on line 41
+[03-Oct-2018 19:52:08 UTC] PHP Stack trace:
+[03-Oct-2018 19:52:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 19:52:08 UTC] PHP   2. Validate->check($source = *uninitialized*, $items = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:31
+[03-Oct-2018 19:54:30 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Validate.php on line 11
+[03-Oct-2018 19:54:30 UTC] PHP Stack trace:
+[03-Oct-2018 19:54:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 19:54:30 UTC] PHP   2. spl_autoload_call(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:9
+[03-Oct-2018 19:54:30 UTC] PHP   3. {closure:/home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:25-27}($class = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:9
+[03-Oct-2018 19:55:27 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Validate.php on line 42
+[03-Oct-2018 19:55:27 UTC] PHP Stack trace:
+[03-Oct-2018 19:55:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 19:55:27 UTC] PHP   2. Validate->check($source = *uninitialized*, $items = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:31
+[03-Oct-2018 20:10:50 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Validate.php on line 47
+[03-Oct-2018 20:10:50 UTC] PHP Stack trace:
+[03-Oct-2018 20:10:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 20:10:50 UTC] PHP   2. Validate->check($source = *uninitialized*, $items = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:31
+[03-Oct-2018 20:12:32 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Validate.php on line 47
+[03-Oct-2018 20:12:32 UTC] PHP Stack trace:
+[03-Oct-2018 20:12:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 20:12:32 UTC] PHP   2. Validate->check($source = *uninitialized*, $items = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:31
+[03-Oct-2018 20:28:10 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Validate.php on line 50
+[03-Oct-2018 20:28:10 UTC] PHP Stack trace:
+[03-Oct-2018 20:28:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 20:28:10 UTC] PHP   2. Validate->check($source = *uninitialized*, $items = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:31
+[03-Oct-2018 20:55:08 UTC] PHP Parse error:  syntax error, unexpected '' . $_POST['' (T_CONSTANT_ENCAPSED_STRING) in /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php on line 32
+[03-Oct-2018 20:59:52 UTC] PHP Parse error:  syntax error, unexpected '' . $_POST['' (T_CONSTANT_ENCAPSED_STRING) in /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php on line 32
+[03-Oct-2018 21:02:39 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php on line 33
+[03-Oct-2018 21:03:51 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Validate.php on line 50
+[03-Oct-2018 21:03:51 UTC] PHP Stack trace:
+[03-Oct-2018 21:03:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 21:03:51 UTC] PHP   2. Validate->check($source = *uninitialized*, $items = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:28
+[03-Oct-2018 21:06:11 UTC] PHP Warning:  password_hash() expects at least 2 parameters, 1 given in /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php on line 31
+[03-Oct-2018 21:06:11 UTC] PHP Stack trace:
+[03-Oct-2018 21:06:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 21:06:11 UTC] PHP   2. password_hash(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:31
+[03-Oct-2018 21:46:20 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Session.php on line 8
+[03-Oct-2018 21:46:20 UTC] PHP Stack trace:
+[03-Oct-2018 21:46:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 21:46:20 UTC] PHP   2. Token::generate() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:65
+[03-Oct-2018 21:46:20 UTC] PHP   3. spl_autoload_call(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:5
+[03-Oct-2018 21:46:20 UTC] PHP   4. {closure:/home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:25-27}($class = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:5
+[03-Oct-2018 21:47:18 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Session.php on line 8
+[03-Oct-2018 21:47:18 UTC] PHP Stack trace:
+[03-Oct-2018 21:47:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 21:47:18 UTC] PHP   2. Token::generate() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:65
+[03-Oct-2018 21:47:18 UTC] PHP   3. spl_autoload_call(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:5
+[03-Oct-2018 21:47:18 UTC] PHP   4. {closure:/home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:25-27}($class = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:5
+[03-Oct-2018 21:47:26 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Session.php on line 8
+[03-Oct-2018 21:47:26 UTC] PHP Stack trace:
+[03-Oct-2018 21:47:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 21:47:26 UTC] PHP   2. Token::generate() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:65
+[03-Oct-2018 21:47:26 UTC] PHP   3. spl_autoload_call(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:5
+[03-Oct-2018 21:47:26 UTC] PHP   4. {closure:/home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:25-27}($class = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:5
+[03-Oct-2018 21:48:43 UTC] PHP Warning:  Illegal offset type in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Session.php on line 4
+[03-Oct-2018 21:48:43 UTC] PHP Stack trace:
+[03-Oct-2018 21:48:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 21:48:43 UTC] PHP   2. Token::generate() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:65
+[03-Oct-2018 21:48:43 UTC] PHP   3. Session::put($name = *uninitialized*, $value = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/classes/Token.php:5
+[03-Oct-2018 21:48:51 UTC] PHP Warning:  Illegal offset type in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Session.php on line 4
+[03-Oct-2018 21:48:51 UTC] PHP Stack trace:
+[03-Oct-2018 21:48:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 21:48:51 UTC] PHP   2. Token::generate() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:65
+[03-Oct-2018 21:48:51 UTC] PHP   3. Session::put($name = *uninitialized*, $value = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/classes/Token.php:5
+[03-Oct-2018 21:48:53 UTC] PHP Warning:  Illegal offset type in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Session.php on line 4
+[03-Oct-2018 21:48:53 UTC] PHP Stack trace:
+[03-Oct-2018 21:48:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 21:48:53 UTC] PHP   2. Token::generate() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:65
+[03-Oct-2018 21:48:53 UTC] PHP   3. Session::put() /home/ubuntu/workspace/PROJECTS/login _ register/classes/Token.php:5
+[03-Oct-2018 21:48:59 UTC] PHP Warning:  Illegal offset type in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Session.php on line 4
+[03-Oct-2018 21:48:59 UTC] PHP Stack trace:
+[03-Oct-2018 21:48:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 21:48:59 UTC] PHP   2. Token::generate() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:65
+[03-Oct-2018 21:48:59 UTC] PHP   3. Session::put($name = *uninitialized*, $value = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/classes/Token.php:5
+[03-Oct-2018 21:50:17 UTC] PHP Warning:  Illegal offset type in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Session.php on line 4
+[03-Oct-2018 21:50:17 UTC] PHP Stack trace:
+[03-Oct-2018 21:50:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 21:50:17 UTC] PHP   2. Token::generate() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:65
+[03-Oct-2018 21:50:17 UTC] PHP   3. Session::put($name = *uninitialized*, $value = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/classes/Token.php:5
+[03-Oct-2018 21:50:22 UTC] PHP Warning:  Illegal offset type in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Session.php on line 4
+[03-Oct-2018 21:50:22 UTC] PHP Stack trace:
+[03-Oct-2018 21:50:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 21:50:22 UTC] PHP   2. Token::generate() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:65
+[03-Oct-2018 21:50:22 UTC] PHP   3. Session::put($name = *uninitialized*, $value = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/classes/Token.php:5
+[03-Oct-2018 21:50:47 UTC] PHP Warning:  Illegal offset type in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Session.php on line 4
+[03-Oct-2018 21:50:47 UTC] PHP Stack trace:
+[03-Oct-2018 21:50:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 21:50:47 UTC] PHP   2. Token::generate() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:65
+[03-Oct-2018 21:50:47 UTC] PHP   3. Session::put($name = *uninitialized*, $value = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/classes/Token.php:5
+[03-Oct-2018 22:13:36 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Session.php on line 5
+[03-Oct-2018 22:13:36 UTC] PHP Stack trace:
+[03-Oct-2018 22:13:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 22:13:36 UTC] PHP   2. Token::check($token = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:4
+[03-Oct-2018 22:13:36 UTC] PHP   3. Session::exists($name = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/classes/Token.php:15
+[03-Oct-2018 22:13:36 UTC] PHP Warning:  Illegal offset type in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Session.php on line 10
+[03-Oct-2018 22:13:36 UTC] PHP Stack trace:
+[03-Oct-2018 22:13:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 22:13:36 UTC] PHP   2. Token::generate() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:66
+[03-Oct-2018 22:13:36 UTC] PHP   3. Session::put($name = *uninitialized*, $value = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/classes/Token.php:6
+[03-Oct-2018 22:14:58 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Session.php on line 5
+[03-Oct-2018 22:14:58 UTC] PHP Stack trace:
+[03-Oct-2018 22:14:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 22:14:58 UTC] PHP   2. Token::check($token = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:4
+[03-Oct-2018 22:14:58 UTC] PHP   3. Session::exists($name = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/classes/Token.php:15
+[03-Oct-2018 22:14:58 UTC] PHP Warning:  Illegal offset type in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Session.php on line 10
+[03-Oct-2018 22:14:58 UTC] PHP Stack trace:
+[03-Oct-2018 22:14:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 22:14:58 UTC] PHP   2. Token::generate() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:66
+[03-Oct-2018 22:14:58 UTC] PHP   3. Session::put($name = *uninitialized*, $value = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/classes/Token.php:6
+[03-Oct-2018 22:14:58 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Session.php on line 5
+[03-Oct-2018 22:14:58 UTC] PHP Stack trace:
+[03-Oct-2018 22:14:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 22:14:58 UTC] PHP   2. Token::check() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:4
+[03-Oct-2018 22:14:58 UTC] PHP   3. Session::exists() /home/ubuntu/workspace/PROJECTS/login _ register/classes/Token.php:15
+[03-Oct-2018 22:14:58 UTC] PHP Warning:  Illegal offset type in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Session.php on line 10
+[03-Oct-2018 22:14:58 UTC] PHP Stack trace:
+[03-Oct-2018 22:14:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 22:14:58 UTC] PHP   2. Token::generate() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:66
+[03-Oct-2018 22:14:58 UTC] PHP   3. Session::put() /home/ubuntu/workspace/PROJECTS/login _ register/classes/Token.php:6
+[03-Oct-2018 22:15:03 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Session.php on line 5
+[03-Oct-2018 22:15:03 UTC] PHP Stack trace:
+[03-Oct-2018 22:15:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 22:15:03 UTC] PHP   2. Token::check($token = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:4
+[03-Oct-2018 22:15:03 UTC] PHP   3. Session::exists($name = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/classes/Token.php:15
+[03-Oct-2018 22:15:03 UTC] PHP Warning:  Illegal offset type in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Session.php on line 10
+[03-Oct-2018 22:15:03 UTC] PHP Stack trace:
+[03-Oct-2018 22:15:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 22:15:03 UTC] PHP   2. Token::generate() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:66
+[03-Oct-2018 22:15:03 UTC] PHP   3. Session::put($name = *uninitialized*, $value = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/classes/Token.php:6
+[03-Oct-2018 22:17:05 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Session.php on line 5
+[03-Oct-2018 22:17:05 UTC] PHP Stack trace:
+[03-Oct-2018 22:17:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 22:17:05 UTC] PHP   2. Token::check($token = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:4
+[03-Oct-2018 22:17:05 UTC] PHP   3. Session::exists($name = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/classes/Token.php:15
+[03-Oct-2018 22:17:05 UTC] PHP Warning:  Illegal offset type in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Session.php on line 10
+[03-Oct-2018 22:17:05 UTC] PHP Stack trace:
+[03-Oct-2018 22:17:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 22:17:05 UTC] PHP   2. Token::generate() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:66
+[03-Oct-2018 22:17:05 UTC] PHP   3. Session::put($name = *uninitialized*, $value = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/classes/Token.php:6
+[03-Oct-2018 22:18:07 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Session.php on line 5
+[03-Oct-2018 22:18:07 UTC] PHP Stack trace:
+[03-Oct-2018 22:18:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 22:18:07 UTC] PHP   2. Token::check($token = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:4
+[03-Oct-2018 22:18:07 UTC] PHP   3. Session::exists($name = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/classes/Token.php:15
+[03-Oct-2018 22:18:07 UTC] PHP Warning:  Illegal offset type in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Session.php on line 10
+[03-Oct-2018 22:18:07 UTC] PHP Stack trace:
+[03-Oct-2018 22:18:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 22:18:07 UTC] PHP   2. Token::generate() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:66
+[03-Oct-2018 22:18:07 UTC] PHP   3. Session::put($name = *uninitialized*, $value = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/classes/Token.php:6
+[03-Oct-2018 22:21:46 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Session.php on line 5
+[03-Oct-2018 22:21:46 UTC] PHP Stack trace:
+[03-Oct-2018 22:21:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 22:21:46 UTC] PHP   2. Token::check($token = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:4
+[03-Oct-2018 22:21:46 UTC] PHP   3. Session::exists($name = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/classes/Token.php:15
+[03-Oct-2018 22:21:46 UTC] PHP Warning:  Illegal offset type in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Session.php on line 10
+[03-Oct-2018 22:21:46 UTC] PHP Stack trace:
+[03-Oct-2018 22:21:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 22:21:46 UTC] PHP   2. Token::generate() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:66
+[03-Oct-2018 22:21:46 UTC] PHP   3. Session::put($name = *uninitialized*, $value = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/classes/Token.php:6
+[03-Oct-2018 22:24:52 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Session.php on line 5
+[03-Oct-2018 22:24:52 UTC] PHP Stack trace:
+[03-Oct-2018 22:24:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 22:24:52 UTC] PHP   2. Token::check($token = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:4
+[03-Oct-2018 22:24:52 UTC] PHP   3. Session::exists($name = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/classes/Token.php:16
+[03-Oct-2018 22:24:52 UTC] PHP Warning:  Illegal offset type in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Session.php on line 10
+[03-Oct-2018 22:24:52 UTC] PHP Stack trace:
+[03-Oct-2018 22:24:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 22:24:52 UTC] PHP   2. Token::generate() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:66
+[03-Oct-2018 22:24:52 UTC] PHP   3. Session::put($name = *uninitialized*, $value = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/classes/Token.php:6
+[03-Oct-2018 22:25:00 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Session.php on line 5
+[03-Oct-2018 22:25:00 UTC] PHP Stack trace:
+[03-Oct-2018 22:25:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 22:25:00 UTC] PHP   2. Token::check($token = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:4
+[03-Oct-2018 22:25:00 UTC] PHP   3. Session::exists($name = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/classes/Token.php:16
+[03-Oct-2018 22:25:00 UTC] PHP Warning:  Illegal offset type in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Session.php on line 10
+[03-Oct-2018 22:25:00 UTC] PHP Stack trace:
+[03-Oct-2018 22:25:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[03-Oct-2018 22:25:00 UTC] PHP   2. Token::generate() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:66
+[03-Oct-2018 22:25:00 UTC] PHP   3. Session::put($name = *uninitialized*, $value = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/classes/Token.php:6
+[03-Oct-2018 23:48:00 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/PROJECTS/login _ register/includes/index.php on line 6
+[04-Oct-2018 01:26:33 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/PROJECTS/login _ register/classes/DB.php on line 42
+[04-Oct-2018 01:26:33 UTC] PHP Stack trace:
+[04-Oct-2018 01:26:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[04-Oct-2018 01:26:33 UTC] PHP   2. Validate->__construct() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:10
+[04-Oct-2018 01:26:33 UTC] PHP   3. spl_autoload_call(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:10
+[04-Oct-2018 01:26:33 UTC] PHP   4. {closure:/home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:26-28}($class = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:10
+[04-Oct-2018 02:51:44 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/PROJECTS/login _ register/classes/DB.php on line 51
+[04-Oct-2018 02:51:44 UTC] PHP Stack trace:
+[04-Oct-2018 02:51:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[04-Oct-2018 02:51:44 UTC] PHP   2. DB->insert($table = *uninitialized*, $fields = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:47
+[04-Oct-2018 02:51:44 UTC] PHP   3. DB->query($sql = *uninitialized*, $params = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/classes/DB.php:193
+[04-Oct-2018 02:53:34 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/PROJECTS/login _ register/classes/DB.php on line 51
+[04-Oct-2018 02:53:34 UTC] PHP Stack trace:
+[04-Oct-2018 02:53:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[04-Oct-2018 02:53:34 UTC] PHP   2. DB->insert($table = *uninitialized*, $fields = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:47
+[04-Oct-2018 02:53:34 UTC] PHP   3. DB->query($sql = *uninitialized*, $params = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/classes/DB.php:194
+[04-Oct-2018 03:02:10 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/PROJECTS/login _ register/classes/DB.php on line 51
+[04-Oct-2018 03:02:10 UTC] PHP Stack trace:
+[04-Oct-2018 03:02:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[04-Oct-2018 03:02:10 UTC] PHP   2. DB->insert($table = *uninitialized*, $fields = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:47
+[04-Oct-2018 03:02:10 UTC] PHP   3. DB->query($sql = *uninitialized*, $params = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/classes/DB.php:197
+[04-Oct-2018 03:16:53 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/ubuntu/workspace/PROJECTS/login _ register/classes/DB.php on line 193
+[04-Oct-2018 03:16:53 UTC] PHP Stack trace:
+[04-Oct-2018 03:16:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[04-Oct-2018 03:16:53 UTC] PHP   2. Validate->__construct() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:10
+[04-Oct-2018 03:16:53 UTC] PHP   3. spl_autoload_call(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:10
+[04-Oct-2018 03:16:53 UTC] PHP   4. {closure:/home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:26-28}($class = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:10
+[04-Oct-2018 04:40:41 UTC] PHP Parse error:  syntax error, unexpected '$Exception' (T_VARIABLE), expecting identifier (T_STRING) or namespace (T_NAMESPACE) or \\ (T_NS_SEPARATOR) in /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php on line 53
+[04-Oct-2018 04:43:10 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/ubuntu/workspace/PROJECTS/login _ register/classes/User.php on line 14
+[04-Oct-2018 04:43:10 UTC] PHP Stack trace:
+[04-Oct-2018 04:43:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[04-Oct-2018 04:43:10 UTC] PHP   2. spl_autoload_call(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:40
+[04-Oct-2018 04:43:10 UTC] PHP   3. {closure:/home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:26-28}($class = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:40
+[04-Oct-2018 04:44:46 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/PROJECTS/login _ register/classes/User.php on line 16
+[04-Oct-2018 04:44:46 UTC] PHP Stack trace:
+[04-Oct-2018 04:44:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[04-Oct-2018 04:44:46 UTC] PHP   2. spl_autoload_call(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:40
+[04-Oct-2018 04:44:46 UTC] PHP   3. {closure:/home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:26-28}($class = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:40
+[04-Oct-2018 04:52:33 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/PROJECTS/login _ register/includes/index.php on line 11
+[04-Oct-2018 04:53:05 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/PROJECTS/login _ register/includes/index.php on line 12
+[04-Oct-2018 05:14:07 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/PROJECTS/login _ register/includes/index.php on line 12
+[04-Oct-2018 06:05:26 UTC] PHP Warning:  include(/errors/404.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Redirect.php on line 14
+[04-Oct-2018 06:05:26 UTC] PHP Stack trace:
+[04-Oct-2018 06:05:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[04-Oct-2018 06:05:26 UTC] PHP   2. Redirect::to($location = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:54
+[04-Oct-2018 06:05:26 UTC] PHP Warning:  include(): Failed opening '/errors/404.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Redirect.php on line 14
+[04-Oct-2018 06:05:26 UTC] PHP Stack trace:
+[04-Oct-2018 06:05:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[04-Oct-2018 06:05:26 UTC] PHP   2. Redirect::to($location = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:54
+[04-Oct-2018 06:07:51 UTC] PHP Warning:  include(/errors/404.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Redirect.php on line 14
+[04-Oct-2018 06:07:51 UTC] PHP Stack trace:
+[04-Oct-2018 06:07:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[04-Oct-2018 06:07:51 UTC] PHP   2. Redirect::to($location = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:54
+[04-Oct-2018 06:07:51 UTC] PHP Warning:  include(): Failed opening '/errors/404.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Redirect.php on line 14
+[04-Oct-2018 06:07:51 UTC] PHP Stack trace:
+[04-Oct-2018 06:07:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[04-Oct-2018 06:07:51 UTC] PHP   2. Redirect::to($location = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:54
+[04-Oct-2018 06:14:31 UTC] PHP Warning:  require_once(/home/ubuntu/workspace/PROJECTS/login _ register/../core/init.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php on line 2
+[04-Oct-2018 06:14:31 UTC] PHP Stack trace:
+[04-Oct-2018 06:14:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[04-Oct-2018 06:14:31 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/ubuntu/workspace/PROJECTS/login _ register/../core/init.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php on line 2
+[04-Oct-2018 06:14:31 UTC] PHP Stack trace:
+[04-Oct-2018 06:14:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[04-Oct-2018 06:18:08 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php on line 3
+[04-Oct-2018 15:22:57 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php on line 2
+[04-Oct-2018 15:27:11 UTC] PHP Fatal error:  Class 'Token' not found in /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php on line 13
+[04-Oct-2018 15:27:11 UTC] PHP Stack trace:
+[04-Oct-2018 15:27:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:0
+[04-Oct-2018 16:15:04 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php on line 5
+[04-Oct-2018 16:20:20 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php on line 5
+[04-Oct-2018 16:22:13 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php on line 6
+[04-Oct-2018 16:23:04 UTC] PHP Warning:  require_once(../classes/Toke.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/PROJECTS/login _ register/core/init.php on line 27
+[04-Oct-2018 16:23:04 UTC] PHP Stack trace:
+[04-Oct-2018 16:23:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:0
+[04-Oct-2018 16:23:04 UTC] PHP   2. spl_autoload_call(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:10
+[04-Oct-2018 16:23:04 UTC] PHP   3. {closure:/home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:26-28}($class = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:10
+[04-Oct-2018 16:23:04 UTC] PHP Fatal error:  require_once(): Failed opening required '../classes/Toke.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/PROJECTS/login _ register/core/init.php on line 27
+[04-Oct-2018 16:23:04 UTC] PHP Stack trace:
+[04-Oct-2018 16:23:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:0
+[04-Oct-2018 16:23:04 UTC] PHP   2. spl_autoload_call(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:10
+[04-Oct-2018 16:23:04 UTC] PHP   3. {closure:/home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:26-28}($class = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:10
+[04-Oct-2018 18:11:36 UTC] PHP Parse error:  syntax error, unexpected '==' (T_IS_EQUAL), expecting ')' in /home/ubuntu/workspace/PROJECTS/login _ register/classes/User.php on line 20
+[04-Oct-2018 18:11:36 UTC] PHP Stack trace:
+[04-Oct-2018 18:11:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:0
+[04-Oct-2018 18:11:36 UTC] PHP   2. spl_autoload_call(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:24
+[04-Oct-2018 18:11:36 UTC] PHP   3. {closure:/home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:26-28}($class = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:24
+[04-Oct-2018 18:13:28 UTC] PHP Fatal error:  Call to undefined method User::get() in /home/ubuntu/workspace/PROJECTS/login _ register/classes/User.php on line 22
+[04-Oct-2018 18:13:28 UTC] PHP Stack trace:
+[04-Oct-2018 18:13:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:0
+[04-Oct-2018 18:13:28 UTC] PHP   2. User->login($email = *uninitialized*, $password = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:25
+[04-Oct-2018 18:13:28 UTC] PHP   3. User->find($email = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/classes/User.php:41
+[04-Oct-2018 18:16:12 UTC] PHP Fatal error:  Call to a member function count() on a non-object in /home/ubuntu/workspace/PROJECTS/login _ register/classes/User.php on line 25
+[04-Oct-2018 18:16:12 UTC] PHP Stack trace:
+[04-Oct-2018 18:16:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:0
+[04-Oct-2018 18:16:12 UTC] PHP   2. User->login($email = *uninitialized*, $password = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:25
+[04-Oct-2018 18:16:12 UTC] PHP   3. User->find($email = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/classes/User.php:41
+[04-Oct-2018 18:21:49 UTC] PHP Fatal error:  Call to a member function count() on a non-object in /home/ubuntu/workspace/PROJECTS/login _ register/classes/User.php on line 26
+[04-Oct-2018 18:21:49 UTC] PHP Stack trace:
+[04-Oct-2018 18:21:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:0
+[04-Oct-2018 18:21:49 UTC] PHP   2. User->login($email = *uninitialized*, $password = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:25
+[04-Oct-2018 18:21:49 UTC] PHP   3. User->find($email = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/classes/User.php:42
+[04-Oct-2018 18:24:19 UTC] PHP Fatal error:  Call to a member function count() on a non-object in /home/ubuntu/workspace/PROJECTS/login _ register/classes/User.php on line 26
+[04-Oct-2018 18:24:19 UTC] PHP Stack trace:
+[04-Oct-2018 18:24:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:0
+[04-Oct-2018 18:24:19 UTC] PHP   2. User->login($email = *uninitialized*, $password = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:25
+[04-Oct-2018 18:24:19 UTC] PHP   3. User->find($email = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/classes/User.php:42
+[04-Oct-2018 18:48:26 UTC] PHP Warning:  require_once(../classes/Database.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/PROJECTS/login _ register/core/init.php on line 27
+[04-Oct-2018 18:48:26 UTC] PHP Stack trace:
+[04-Oct-2018 18:48:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:0
+[04-Oct-2018 18:48:26 UTC] PHP   2. User->login($email = *uninitialized*, $password = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:25
+[04-Oct-2018 18:48:26 UTC] PHP   3. spl_autoload_call(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:50
+[04-Oct-2018 18:48:26 UTC] PHP   4. {closure:/home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:26-28}($class = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:50
+[04-Oct-2018 18:48:26 UTC] PHP Fatal error:  require_once(): Failed opening required '../classes/Database.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/PROJECTS/login _ register/core/init.php on line 27
+[04-Oct-2018 18:48:26 UTC] PHP Stack trace:
+[04-Oct-2018 18:48:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:0
+[04-Oct-2018 18:48:26 UTC] PHP   2. User->login($email = *uninitialized*, $password = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:25
+[04-Oct-2018 18:48:26 UTC] PHP   3. spl_autoload_call(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:50
+[04-Oct-2018 18:48:26 UTC] PHP   4. {closure:/home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:26-28}($class = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:50
+[04-Oct-2018 19:22:32 UTC] UPDATE ERROR
+[04-Oct-2018 19:23:33 UTC] UPDATE ERROR
+[04-Oct-2018 19:36:41 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/PROJECTS/login _ register/classes/User.php on line 39
+[04-Oct-2018 19:36:41 UTC] PHP Stack trace:
+[04-Oct-2018 19:36:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:0
+[04-Oct-2018 19:36:41 UTC] PHP   2. spl_autoload_call(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:24
+[04-Oct-2018 19:36:41 UTC] PHP   3. {closure:/home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:26-28}($class = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:24
+[04-Oct-2018 19:44:25 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/ubuntu/workspace/PROJECTS/login _ register/classes/DB.php on line 138
+[04-Oct-2018 19:44:25 UTC] PHP Stack trace:
+[04-Oct-2018 19:44:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:0
+[04-Oct-2018 19:44:25 UTC] PHP   2. Validate->__construct() /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:13
+[04-Oct-2018 19:44:25 UTC] PHP   3. spl_autoload_call(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:10
+[04-Oct-2018 19:44:25 UTC] PHP   4. {closure:/home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:26-28}($class = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:10
+[04-Oct-2018 19:45:45 UTC] UPDATE ERROR
+[04-Oct-2018 19:48:57 UTC] UPDATE ERROR
+[04-Oct-2018 19:58:13 UTC] UPDATE ERROR

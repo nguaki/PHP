@@ -28,7 +28,10 @@ require_once 'Validation.php';
 			redirect("index.php");
         }
     }
-    
+   
+    //Further implementation: Need to set up an array of acceptable URLs.
+    //Check if $url exists in this array.
+    //Redirect only if it is in this array.
     function redirect( $url ) 
     {
         header("Location: $url");

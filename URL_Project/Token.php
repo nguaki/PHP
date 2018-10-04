@@ -1,4 +1,5 @@
 <?php
+//Checks for CSRF attack by comparing tokens from the form and _SESSION.
 class Token
 {
 	public static function generate()
