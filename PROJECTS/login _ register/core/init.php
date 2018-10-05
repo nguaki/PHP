@@ -20,7 +20,15 @@ $GLOBALS['config'] = array(
 								'session' => array(
 														'session_name' => 'user',
 														'token_name'    => 'token'
-												  )	
+												  ),	
+								'weather' => array(
+														'city'    => 'kansas city',
+														'country' => 'us',
+														'api_id'  => 'e44e3488ccc2774c03bddffbb8161aed',
+														'url'     => 'http://api.openweathermap.org/data/2.5/weather?q=',
+														'unit_time' => 'min',     //min or sec
+													    'refresh_rate'	=> 1
+												  )											  
 							);
 
 spl_autoload_register( function($class){

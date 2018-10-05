@@ -50,8 +50,6 @@
            
            if( $objDB->count()){
                $this->_data = $objDB->first();
-               echo "_data is assigned. <br>";
-               var_dump($this->_data);
                return true;
            }
            
@@ -79,13 +77,8 @@
         //$password -  actual value of password.
         public function login($email = null, $password=null, $remember = false) 
         {
-             
-             echo "$email : $password : " . $this->exists() . "<br>";
-             
-            //if( !$email && !$password && $this->exists())
             if( !$email && !$password && $this->exists())
             {
-                echo "Iam in<br>";
                 Session::put($this->_sessionName, $this->data()->user_email);
             }
             else
@@ -136,11 +129,9 @@
         } 
     
         public function exists(){
-           if(!empty($this->_data)) echo "_data exists";
-           else echo "_data doesn't exists";
-          //var_dump($this->_data);
             return (!empty($this->_data)) ? true : false;
         } 
+        
         //Getter for private member. 
         public function data(){
             return $this->_data;

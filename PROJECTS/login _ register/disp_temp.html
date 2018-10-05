@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+        <title>Test Page</title>
+        <p><span style="font-size: 25px" id="temp_field"></span></p>
+        <script>
+        function getTemperature()
+        {
+            $.ajax(
+                    {
+                        url: 'weather_info.php',
+                        type: 'POST',
+                        dataType: 'text',
+                        <!--data: {latitude: '7.15588546', longitude: '81.5659984458'},-->
+                        success: function (response)
+                        {
+                            //alert(response);
+                            $('#temp_field').html(response);
+                        }
+                    });
+        }
+        <!--Display first and then set the timer. -->
+        getTemperature();
+        <!--In miliseconds. 1000 is one second.   -->
+        setInterval("getTemperature()", 1000 * 1000);
+        </script>
+</body>
+</html>

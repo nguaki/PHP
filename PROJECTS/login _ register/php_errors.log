@@ -521,3 +521,131 @@
 [05-Oct-2018 05:33:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:0
 [05-Oct-2018 05:33:29 UTC] PHP   2. spl_autoload_call(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:24
 [05-Oct-2018 05:33:29 UTC] PHP   3. {closure:/home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:26-28}($class = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:24
+[05-Oct-2018 18:09:36 UTC] PHP Warning:  file_get_contents(http://api.openweathermap.org/data/2.5/weather?q=kansas city,us&appid=e44e3488ccc2774c03bddffbb8161aed'): failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php on line 18
+[05-Oct-2018 18:09:36 UTC] PHP Stack trace:
+[05-Oct-2018 18:09:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:0
+[05-Oct-2018 18:09:36 UTC] PHP   2. file_get_contents() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:18
+[05-Oct-2018 18:11:27 UTC] PHP Warning:  file_get_contents(http://api.openweathermap.org/data/2.5/weather?q=kansas city,us&appid=e44e3488ccc2774c03bddffbb8161aed'): failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php on line 18
+[05-Oct-2018 18:11:27 UTC] PHP Stack trace:
+[05-Oct-2018 18:11:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:0
+[05-Oct-2018 18:11:27 UTC] PHP   2. file_get_contents(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:18
+[05-Oct-2018 18:14:24 UTC] PHP Warning:  file_get_contents(http://api.openweathermap.org/data/2.5/weather?q=kansas city,us&appid=e44e3488ccc2774c03bddffbb8161aed"): failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php on line 18
+[05-Oct-2018 18:14:24 UTC] PHP Stack trace:
+[05-Oct-2018 18:14:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:0
+[05-Oct-2018 18:14:24 UTC] PHP   2. file_get_contents() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:18
+[05-Oct-2018 18:14:24 UTC] PHP Warning:  file_get_contents(http://api.openweathermap.org/data/2.5/weather?q=kansas city,us&appid=e44e3488ccc2774c03bddffbb8161aed"): failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php on line 18
+[05-Oct-2018 18:14:24 UTC] PHP Stack trace:
+[05-Oct-2018 18:14:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:0
+[05-Oct-2018 18:14:24 UTC] PHP   2. file_get_contents() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:18
+[05-Oct-2018 18:14:37 UTC] PHP Warning:  file_get_contents(http://api.openweathermap.org/data/2.5/weather?q=kansas city,us&appid=e44e3488ccc2774c03bddffbb8161aed"): failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php on line 18
+[05-Oct-2018 18:14:37 UTC] PHP Stack trace:
+[05-Oct-2018 18:14:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:0
+[05-Oct-2018 18:14:37 UTC] PHP   2. file_get_contents(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:18
+[05-Oct-2018 18:14:50 UTC] PHP Warning:  file_get_contents(http://api.openweathermap.org/data/2.5/weather?q=kansas city,us&appid=e44e3488ccc2774c03bddffbb8161aed"): failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php on line 18
+[05-Oct-2018 18:14:50 UTC] PHP Stack trace:
+[05-Oct-2018 18:14:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:0
+[05-Oct-2018 18:14:50 UTC] PHP   2. file_get_contents(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:18
+[05-Oct-2018 18:15:07 UTC] PHP Warning:  file_get_contents(http://api.openweathermap.org/data/2.5/weather?q=kansas city,us&appid=e44e3488ccc2774c03bddffbb8161aed"): failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php on line 18
+[05-Oct-2018 18:15:07 UTC] PHP Stack trace:
+[05-Oct-2018 18:15:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:0
+[05-Oct-2018 18:15:07 UTC] PHP   2. file_get_contents(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:18
+[05-Oct-2018 18:15:19 UTC] PHP Warning:  file_get_contents(http://api.openweathermap.org/data/2.5/weather?q=kansas city,us&appid=e44e3488ccc2774c03bddffbb8161aed"): failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php on line 18
+[05-Oct-2018 18:15:19 UTC] PHP Stack trace:
+[05-Oct-2018 18:15:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:0
+[05-Oct-2018 18:15:19 UTC] PHP   2. file_get_contents(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:18
+[05-Oct-2018 18:16:10 UTC] PHP Warning:  file_get_contents(http://api.openweathermap.org/data/2.5/weather?q=kansas city,us&appid=e44e3488ccc2774c03bddffbb8161aed"): failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php on line 18
+[05-Oct-2018 18:16:10 UTC] PHP Stack trace:
+[05-Oct-2018 18:16:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:0
+[05-Oct-2018 18:16:10 UTC] PHP   2. file_get_contents() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:18
+[05-Oct-2018 18:16:29 UTC] PHP Warning:  file_get_contents(http://api.openweathermap.org/data/2.5/weather?q=kansas city,us&appid=e44e3488ccc2774c03bddffbb8161aed"): failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php on line 18
+[05-Oct-2018 18:16:29 UTC] PHP Stack trace:
+[05-Oct-2018 18:16:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:0
+[05-Oct-2018 18:16:29 UTC] PHP   2. file_get_contents(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:18
+[05-Oct-2018 18:16:40 UTC] PHP Warning:  file_get_contents(http://api.openweathermap.org/data/2.5/weather?q=kansas city,us&appid=e44e3488ccc2774c03bddffbb8161aed"): failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php on line 18
+[05-Oct-2018 18:16:40 UTC] PHP Stack trace:
+[05-Oct-2018 18:16:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:0
+[05-Oct-2018 18:16:40 UTC] PHP   2. file_get_contents(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:18
+[05-Oct-2018 18:18:29 UTC] PHP Warning:  file_get_contents("http://api.openweathermap.org/data/2.5/weather?q=kansas city,us&appid=e44e3488ccc2774c03bddffbb8161aed"): failed to open stream: No such file or directory in /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php on line 18
+[05-Oct-2018 18:18:29 UTC] PHP Stack trace:
+[05-Oct-2018 18:18:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:0
+[05-Oct-2018 18:18:29 UTC] PHP   2. file_get_contents(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:18
+[05-Oct-2018 18:18:34 UTC] PHP Warning:  file_get_contents("http://api.openweathermap.org/data/2.5/weather?q=kansas city,us&appid=e44e3488ccc2774c03bddffbb8161aed"): failed to open stream: No such file or directory in /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php on line 18
+[05-Oct-2018 18:18:34 UTC] PHP Stack trace:
+[05-Oct-2018 18:18:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:0
+[05-Oct-2018 18:18:34 UTC] PHP   2. file_get_contents() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:18
+[05-Oct-2018 18:18:46 UTC] PHP Warning:  file_get_contents("http://api.openweathermap.org/data/2.5/weather?q=kansas city,us&appid=e44e3488ccc2774c03bddffbb8161aed"): failed to open stream: No such file or directory in /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php on line 18
+[05-Oct-2018 18:18:46 UTC] PHP Stack trace:
+[05-Oct-2018 18:18:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:0
+[05-Oct-2018 18:18:46 UTC] PHP   2. file_get_contents(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:18
+[05-Oct-2018 18:25:08 UTC] PHP Warning:  file_get_contents(http://api.openweathermap.org/data/2.5/weather?q=kansas city,us&appid=e44e3488ccc2774c03bddffbb8161aed"): failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php on line 20
+[05-Oct-2018 18:25:08 UTC] PHP Stack trace:
+[05-Oct-2018 18:25:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:0
+[05-Oct-2018 18:25:08 UTC] PHP   2. file_get_contents(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:20
+[05-Oct-2018 18:25:11 UTC] PHP Warning:  file_get_contents(http://api.openweathermap.org/data/2.5/weather?q=kansas city,us&appid=e44e3488ccc2774c03bddffbb8161aed"): failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php on line 20
+[05-Oct-2018 18:25:11 UTC] PHP Stack trace:
+[05-Oct-2018 18:25:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:0
+[05-Oct-2018 18:25:11 UTC] PHP   2. file_get_contents() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:20
+[05-Oct-2018 18:25:22 UTC] PHP Warning:  file_get_contents(http://api.openweathermap.org/data/2.5/weather?q=kansas city,us&appid=e44e3488ccc2774c03bddffbb8161aed"): failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php on line 20
+[05-Oct-2018 18:25:22 UTC] PHP Stack trace:
+[05-Oct-2018 18:25:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:0
+[05-Oct-2018 18:25:22 UTC] PHP   2. file_get_contents(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:20
+[05-Oct-2018 18:28:04 UTC] PHP Warning:  file_get_contents(http://api.openweathermap.org/data/2.5/weather?q=kansas city,us&appid=e44e3488ccc2774c03bddffbb8161aed"): failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php on line 20
+[05-Oct-2018 18:28:04 UTC] PHP Stack trace:
+[05-Oct-2018 18:28:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:0
+[05-Oct-2018 18:28:04 UTC] PHP   2. file_get_contents() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:20
+[05-Oct-2018 18:28:07 UTC] PHP Warning:  file_get_contents(http://api.openweathermap.org/data/2.5/weather?q=kansas city,us&appid=e44e3488ccc2774c03bddffbb8161aed"): failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php on line 20
+[05-Oct-2018 18:28:07 UTC] PHP Stack trace:
+[05-Oct-2018 18:28:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:0
+[05-Oct-2018 18:28:07 UTC] PHP   2. file_get_contents(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:20
+[05-Oct-2018 19:13:35 UTC] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Weather.php on line 13
+[05-Oct-2018 19:13:35 UTC] PHP Stack trace:
+[05-Oct-2018 19:13:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:0
+[05-Oct-2018 19:13:35 UTC] PHP   2. Weather->__construct() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:12
+[05-Oct-2018 19:13:35 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/PROJECTS/login _ register/classes/Weather.php:13
+[05-Oct-2018 19:13:36 UTC] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Weather.php on line 13
+[05-Oct-2018 19:13:36 UTC] PHP Stack trace:
+[05-Oct-2018 19:13:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:0
+[05-Oct-2018 19:13:36 UTC] PHP   2. Weather->__construct() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:12
+[05-Oct-2018 19:13:36 UTC] PHP   3. file_get_contents() /home/ubuntu/workspace/PROJECTS/login _ register/classes/Weather.php:13
+[05-Oct-2018 19:13:49 UTC] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Weather.php on line 13
+[05-Oct-2018 19:13:49 UTC] PHP Stack trace:
+[05-Oct-2018 19:13:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:0
+[05-Oct-2018 19:13:49 UTC] PHP   2. Weather->__construct(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:12
+[05-Oct-2018 19:13:49 UTC] PHP   3. file_get_contents(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/classes/Weather.php:13
+[05-Oct-2018 19:32:17 UTC] PHP Parse error:  syntax error, unexpected 'var_dump' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php on line 16
+[05-Oct-2018 19:32:36 UTC] PHP Parse error:  syntax error, unexpected 'var_dump' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php on line 16
+[05-Oct-2018 19:32:46 UTC] PHP Parse error:  syntax error, unexpected 'var_dump' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php on line 16
+[05-Oct-2018 19:49:52 UTC] PHP Fatal error:  Cannot access empty property in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Weather.php on line 20
+[05-Oct-2018 19:49:52 UTC] PHP Stack trace:
+[05-Oct-2018 19:49:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:0
+[05-Oct-2018 19:49:52 UTC] PHP   2. Weather->__construct($url = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:12
+[05-Oct-2018 19:49:57 UTC] PHP Fatal error:  Cannot access empty property in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Weather.php on line 20
+[05-Oct-2018 19:49:57 UTC] PHP Stack trace:
+[05-Oct-2018 19:49:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:0
+[05-Oct-2018 19:49:57 UTC] PHP   2. Weather->__construct() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:12
+[05-Oct-2018 19:50:05 UTC] PHP Fatal error:  Cannot access empty property in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Weather.php on line 20
+[05-Oct-2018 19:50:05 UTC] PHP Stack trace:
+[05-Oct-2018 19:50:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:0
+[05-Oct-2018 19:50:05 UTC] PHP   2. Weather->__construct($url = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:12
+[05-Oct-2018 19:50:14 UTC] PHP Fatal error:  Cannot access empty property in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Weather.php on line 20
+[05-Oct-2018 19:50:14 UTC] PHP Stack trace:
+[05-Oct-2018 19:50:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:0
+[05-Oct-2018 19:50:14 UTC] PHP   2. Weather->__construct($url = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:12
+[05-Oct-2018 20:31:40 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/ubuntu/workspace/PROJECTS/login _ register/includes/index.php on line 66
+[05-Oct-2018 20:53:30 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/ubuntu/workspace/PROJECTS/login _ register/includes/index.php on line 66

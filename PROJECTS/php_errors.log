@@ -6,3 +6,8 @@
 [04-Oct-2018 21:33:12 UTC] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/var/lib/php5) in Unknown on line 0
 [04-Oct-2018 21:34:06 UTC] PHP Warning:  Unknown: The session id is too long or contains illegal characters, valid characters are a-z, A-Z, 0-9 and '-,' in Unknown on line 0
 [04-Oct-2018 21:34:06 UTC] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/var/lib/php5) in Unknown on line 0
+[05-Oct-2018 07:41:58 UTC] PHP Warning:  file_get_contents(http://api.openweathermap.org/data/2.5/weather?q=kansas city,us&appid=b1b15e88fa797225412429c1c50c122a): failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in /home/ubuntu/workspace/PROJECTS/login _ register/weather_info.php on line 17
+[05-Oct-2018 07:41:58 UTC] PHP Stack trace:
+[05-Oct-2018 07:41:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/weather_info.php:0
+[05-Oct-2018 07:41:58 UTC] PHP   2. file_get_contents(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/weather_info.php:17
