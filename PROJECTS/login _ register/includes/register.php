@@ -34,13 +34,13 @@
              if ($Validation->passed())
              {   
                  //Insert a new registration.
-                 $hash = password_hash($_POST['password'], PASSWORD_DEFAULT);
-                 //$sql_statement = "INSERT INTO users (user_name, user_email, user_pass, visit_count) VALUES ( '" . $_POST['user_name'] . "','" . $_POST['email'] . "','" . $hash . "',0)";
-                //echo $sql_statement . '<br>';
-                //DB::getInstance()->query($sql_statement);
+                 //$hash = password_hash($_POST['password'], PASSWORD_DEFAULT);
+                 $hash = Hash::generate_pw_hash($_POST['password'] );
+                 
                 $user = new User();
                 
                 try{
+                    //Insert a new row of data for a user.
                     $user->create( 
                                 array( 
                                         'user_email'=> $_POST['email'],

@@ -1,5 +1,6 @@
 <?php
     class Session{
+        
         //Check if token exists in $_SESSION.
         public static function exists($name){
             return (isset($_SESSION[$name])) ? true : false;

@@ -413,3 +413,111 @@
 [04-Oct-2018 19:45:45 UTC] UPDATE ERROR
 [04-Oct-2018 19:48:57 UTC] UPDATE ERROR
 [04-Oct-2018 19:58:13 UTC] UPDATE ERROR
+[04-Oct-2018 20:03:34 UTC] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) in /home/ubuntu/workspace/PROJECTS/login _ register/classes/User.php on line 74
+[04-Oct-2018 20:03:34 UTC] PHP Stack trace:
+[04-Oct-2018 20:03:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:0
+[04-Oct-2018 20:03:34 UTC] PHP   2. spl_autoload_call(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:24
+[04-Oct-2018 20:03:34 UTC] PHP   3. {closure:/home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:26-28}($class = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:24
+[04-Oct-2018 21:29:23 UTC] PHP Warning:  session_start(): The session id is too long or contains illegal characters, valid characters are a-z, A-Z, 0-9 and '-,' in /home/ubuntu/workspace/PROJECTS/login _ register/core/init.php on line 2
+[04-Oct-2018 21:29:23 UTC] PHP Stack trace:
+[04-Oct-2018 21:29:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:0
+[04-Oct-2018 21:29:23 UTC] PHP   2. require_once() /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:2
+[04-Oct-2018 21:29:23 UTC] PHP   3. session_start() /home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:2
+[04-Oct-2018 21:32:04 UTC] PHP Warning:  session_start(): The session id is too long or contains illegal characters, valid characters are a-z, A-Z, 0-9 and '-,' in /home/ubuntu/workspace/PROJECTS/login _ register/core/init.php on line 2
+[04-Oct-2018 21:32:04 UTC] PHP Stack trace:
+[04-Oct-2018 21:32:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:0
+[04-Oct-2018 21:32:04 UTC] PHP   2. require_once() /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:2
+[04-Oct-2018 21:32:04 UTC] PHP   3. session_start() /home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:2
+[04-Oct-2018 21:33:12 UTC] PHP Warning:  session_start(): The session id is too long or contains illegal characters, valid characters are a-z, A-Z, 0-9 and '-,' in /home/ubuntu/workspace/PROJECTS/login _ register/core/init.php on line 2
+[04-Oct-2018 21:33:12 UTC] PHP Stack trace:
+[04-Oct-2018 21:33:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:0
+[04-Oct-2018 21:33:12 UTC] PHP   2. require_once() /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:2
+[04-Oct-2018 21:33:12 UTC] PHP   3. session_start() /home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:2
+[04-Oct-2018 21:34:06 UTC] PHP Warning:  session_start(): The session id is too long or contains illegal characters, valid characters are a-z, A-Z, 0-9 and '-,' in /home/ubuntu/workspace/PROJECTS/login _ register/core/init.php on line 2
+[04-Oct-2018 21:34:06 UTC] PHP Stack trace:
+[04-Oct-2018 21:34:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:0
+[04-Oct-2018 21:34:06 UTC] PHP   2. require_once() /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:2
+[04-Oct-2018 21:34:06 UTC] PHP   3. session_start() /home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:2
+[04-Oct-2018 21:43:23 UTC] PHP Parse error:  syntax error, unexpected 'session' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/PROJECTS/login _ register/includes/index.php on line 13
+[04-Oct-2018 21:43:48 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/PROJECTS/login _ register/includes/index.php on line 16
+[04-Oct-2018 21:44:15 UTC] PHP Fatal error:  Call to undefined method User::_isLoggedIn() in /home/ubuntu/workspace/PROJECTS/login _ register/classes/User.php on line 98
+[04-Oct-2018 21:44:15 UTC] PHP Stack trace:
+[04-Oct-2018 21:44:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/index.php:0
+[04-Oct-2018 21:44:15 UTC] PHP   2. User->isLoggedIn() /home/ubuntu/workspace/PROJECTS/login _ register/includes/index.php:15
+[04-Oct-2018 21:45:18 UTC] PHP Fatal error:  Call to undefined method User::_isLoggedIn() in /home/ubuntu/workspace/PROJECTS/login _ register/classes/User.php on line 98
+[04-Oct-2018 21:45:18 UTC] PHP Stack trace:
+[04-Oct-2018 21:45:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/index.php:0
+[04-Oct-2018 21:45:18 UTC] PHP   2. User->isLoggedIn() /home/ubuntu/workspace/PROJECTS/login _ register/includes/index.php:15
+[04-Oct-2018 22:02:50 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/PROJECTS/login _ register/includes/index.php on line 13
+[04-Oct-2018 22:04:57 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/PROJECTS/login _ register/includes/index.php on line 13
+[04-Oct-2018 22:59:34 UTC] PHP Fatal error:  Call to undefined method User::logout() in /home/ubuntu/workspace/PROJECTS/login _ register/includes/logout.php on line 6
+[04-Oct-2018 22:59:34 UTC] PHP Stack trace:
+[04-Oct-2018 22:59:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/logout.php:0
+[04-Oct-2018 23:01:05 UTC] PHP Fatal error:  Call to undefined method Redirect::go() in /home/ubuntu/workspace/PROJECTS/login _ register/includes/logout.php on line 8
+[04-Oct-2018 23:01:05 UTC] PHP Stack trace:
+[04-Oct-2018 23:01:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/logout.php:0
+[05-Oct-2018 00:01:00 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/PROJECTS/login _ register/classes/User.php on line 91
+[05-Oct-2018 00:01:00 UTC] PHP Stack trace:
+[05-Oct-2018 00:01:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:0
+[05-Oct-2018 00:01:00 UTC] PHP   2. spl_autoload_call(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:40
+[05-Oct-2018 00:01:00 UTC] PHP   3. {closure:/home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:26-28}($class = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/register.php:40
+[05-Oct-2018 01:13:00 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/ubuntu/workspace/PROJECTS/login _ register/classes/User.php on line 97
+[05-Oct-2018 01:13:00 UTC] PHP Stack trace:
+[05-Oct-2018 01:13:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:0
+[05-Oct-2018 01:13:00 UTC] PHP   2. spl_autoload_call(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:24
+[05-Oct-2018 01:13:00 UTC] PHP   3. {closure:/home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:26-28}($class = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:24
+[05-Oct-2018 02:54:23 UTC] PHP Parse error:  syntax error, unexpected '(' in /home/ubuntu/workspace/PROJECTS/login _ register/core/init.php on line 32
+[05-Oct-2018 02:54:23 UTC] PHP Stack trace:
+[05-Oct-2018 02:54:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/index.php:0
+[05-Oct-2018 02:55:48 UTC] PHP Parse error:  syntax error, unexpected '(' in /home/ubuntu/workspace/PROJECTS/login _ register/core/init.php on line 34
+[05-Oct-2018 02:55:48 UTC] PHP Stack trace:
+[05-Oct-2018 02:55:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/index.php:0
+[05-Oct-2018 02:56:24 UTC] PHP Fatal error:  Call to undefined method DB::select() in /home/ubuntu/workspace/PROJECTS/login _ register/core/init.php on line 35
+[05-Oct-2018 02:56:24 UTC] PHP Stack trace:
+[05-Oct-2018 02:56:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/index.php:0
+[05-Oct-2018 02:56:24 UTC] PHP   2. require_once() /home/ubuntu/workspace/PROJECTS/login _ register/includes/index.php:2
+[05-Oct-2018 03:15:37 UTC] PHP Fatal error:  Call to a member function first() on a non-object in /home/ubuntu/workspace/PROJECTS/login _ register/classes/User.php on line 115
+[05-Oct-2018 03:15:37 UTC] PHP Stack trace:
+[05-Oct-2018 03:15:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:0
+[05-Oct-2018 03:15:37 UTC] PHP   2. User->login($email = *uninitialized*, $password = *uninitialized*, $remember = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:29
+[05-Oct-2018 03:17:53 UTC] PHP Fatal error:  Call to a member function first() on a non-object in /home/ubuntu/workspace/PROJECTS/login _ register/classes/User.php on line 115
+[05-Oct-2018 03:17:53 UTC] PHP Stack trace:
+[05-Oct-2018 03:17:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:0
+[05-Oct-2018 03:17:53 UTC] PHP   2. User->login($email = *uninitialized*, $password = *uninitialized*, $remember = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:29
+[05-Oct-2018 03:24:50 UTC] PHP Fatal error:  Call to a member function first() on a non-object in /home/ubuntu/workspace/PROJECTS/login _ register/classes/User.php on line 115
+[05-Oct-2018 03:24:50 UTC] PHP Stack trace:
+[05-Oct-2018 03:24:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:0
+[05-Oct-2018 03:24:50 UTC] PHP   2. User->login($email = *uninitialized*, $password = *uninitialized*, $remember = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:29
+[05-Oct-2018 03:26:53 UTC] PHP Fatal error:  Call to a member function first() on a non-object in /home/ubuntu/workspace/PROJECTS/login _ register/classes/User.php on line 115
+[05-Oct-2018 03:26:53 UTC] PHP Stack trace:
+[05-Oct-2018 03:26:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:0
+[05-Oct-2018 03:26:53 UTC] PHP   2. User->login($email = *uninitialized*, $password = *uninitialized*, $remember = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:29
+[05-Oct-2018 04:00:03 UTC] PHP Fatal error:  Call to a member function count() on a non-object in /home/ubuntu/workspace/PROJECTS/login _ register/classes/User.php on line 45
+[05-Oct-2018 04:00:03 UTC] PHP Stack trace:
+[05-Oct-2018 04:00:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/index.php:0
+[05-Oct-2018 04:00:03 UTC] PHP   2. require_once() /home/ubuntu/workspace/PROJECTS/login _ register/includes/index.php:2
+[05-Oct-2018 04:00:03 UTC] PHP   3. User->login() /home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:43
+[05-Oct-2018 04:00:03 UTC] PHP   4. User->find() /home/ubuntu/workspace/PROJECTS/login _ register/classes/User.php:85
+[05-Oct-2018 04:04:32 UTC] PHP Fatal error:  Call to a member function count() on a non-object in /home/ubuntu/workspace/PROJECTS/login _ register/classes/User.php on line 45
+[05-Oct-2018 04:04:32 UTC] PHP Stack trace:
+[05-Oct-2018 04:04:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/index.php:0
+[05-Oct-2018 04:04:32 UTC] PHP   2. require_once() /home/ubuntu/workspace/PROJECTS/login _ register/includes/index.php:2
+[05-Oct-2018 04:04:32 UTC] PHP   3. User->login($email = *uninitialized*, $password = *uninitialized*, $remember = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:43
+[05-Oct-2018 04:04:32 UTC] PHP   4. User->find($email = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/classes/User.php:86
+[05-Oct-2018 04:25:21 UTC] PHP Fatal error:  Call to a member function count() on a non-object in /home/ubuntu/workspace/PROJECTS/login _ register/classes/User.php on line 45
+[05-Oct-2018 04:25:21 UTC] PHP Stack trace:
+[05-Oct-2018 04:25:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:0
+[05-Oct-2018 04:25:21 UTC] PHP   2. require_once() /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:2
+[05-Oct-2018 04:25:21 UTC] PHP   3. User->login($email = *uninitialized*, $password = *uninitialized*, $remember = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:45
+[05-Oct-2018 04:25:21 UTC] PHP   4. User->find($email = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/classes/User.php:87
+[05-Oct-2018 04:27:53 UTC] PHP Fatal error:  Call to a member function count() on a non-object in /home/ubuntu/workspace/PROJECTS/login _ register/classes/User.php on line 45
+[05-Oct-2018 04:27:53 UTC] PHP Stack trace:
+[05-Oct-2018 04:27:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/index.php:0
+[05-Oct-2018 04:27:53 UTC] PHP   2. require_once() /home/ubuntu/workspace/PROJECTS/login _ register/includes/index.php:2
+[05-Oct-2018 04:27:53 UTC] PHP   3. User->login($email = *uninitialized*, $password = *uninitialized*, $remember = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:45
+[05-Oct-2018 04:27:53 UTC] PHP   4. User->find($email = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/classes/User.php:87
+[05-Oct-2018 05:33:29 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/ubuntu/workspace/PROJECTS/login _ register/classes/User.php on line 157
+[05-Oct-2018 05:33:29 UTC] PHP Stack trace:
+[05-Oct-2018 05:33:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:0
+[05-Oct-2018 05:33:29 UTC] PHP   2. spl_autoload_call(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:24
+[05-Oct-2018 05:33:29 UTC] PHP   3. {closure:/home/ubuntu/workspace/PROJECTS/login _ register/core/init.php:26-28}($class = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/login.php:24

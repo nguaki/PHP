@@ -22,10 +22,15 @@
             if($validation->passed()){
                 //Log user in
                 $user = new User();
-                $login = $user->login(Input::get('email'), Input::get('password'));
                 
+                //Check of remember check box.
+                $remember = (Input::get('remember') === 'on') ? true : false;
+                
+                $login = $user->login(Input::get('email'), Input::get('password'), $remember);
+                
+                //If user is logged, redirect to home page.
                 if($login)
-                    echo 'Login Success';
+                    Redirect::to('index.php');
                 else 
                     echo 'Login failed';
             } else {
@@ -37,12 +42,16 @@
 ?>
     <form action="" method="POST">
         <div class="field">
-            <label for="">Email</label>
+            <label for="email">Email</label>
             <input type="email" name="email" id="email" value="" autocomplete="on">
         </div> 
         <div class="field">
-            <label for="">Password:</label>
+            <label for="password">Password:</label>
             <input type="password" name="password" id="password" value="" autocomplete="off">
+        </div> 
+        <div class="field">
+            <input type="checkbox" name="remember" id="remember">
+            <laber for="remember">Remember</laber>
         </div> 
             <input type="hidden" name="token" value="<?php echo Token::generate(); ?>">
             <input type="submit" value="Log In">

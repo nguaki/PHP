@@ -1,10 +1,35 @@
 <?php
     class User{
         private $_db,
-                $_data;
-        
+                $_data,
+                $_sessionName,
+                $_cookieName,
+                $_isLoggedIn;
+                
+       //$user - email of a user 
         public function __construct($user = null){
            $this->_db = DB::getInstance(); 
+           $this->_sessionName = Config::get('session/session_name');
+           $this->_cookieName  = Config::get('remember/cookie_name');
+           
+           //Check if a user is logged in.
+           if(!$user){
+               if(Session::exists($this->_sessionName)){
+                   $user_email = Session::get($this->_sessionName);
+                   
+                   if($this->find($user_email)){
+                       $this->_isLoggedIn = true;
+                   } else {
+                       //process logout
+                   }
+               }
+           } else {
+               //Rememberme - existing user wants to rejoin the site, but SESSION_ID no longer exists.
+               //In this case, instantiate with the specific email and recover the data related to
+               //this object.
+               if( $this->find($user) )
+                $this->_isLoggedIn = true;
+           }
         }
        
         //Inserts a new row for a new user.
@@ -20,11 +45,13 @@
         public function find($email=null) {
            if($email) {
                //Returns false or entire object of DB class.
-               $data = $this->_db->get('users', array( 'user_email', '=', $email));
+               $objDB = $this->_db->get('users', array( 'user_email', '=', $email));
            }
            
-           if( $data && $data->count()){
-               $this->_data = $data->first();
+           if( $objDB->count()){
+               $this->_data = $objDB->first();
+               echo "_data is assigned. <br>";
+               var_dump($this->_data);
                return true;
            }
            
@@ -50,26 +77,86 @@
         // 
         //$email    -  actual value of an email.
         //$password -  actual value of password.
-        public function login($email = null, $password=null) {
+        public function login($email = null, $password=null, $remember = false) 
+        {
              
-            $user = $this->find($email);
-            
-            if($user)
+             echo "$email : $password : " . $this->exists() . "<br>";
+             
+            //if( !$email && !$password && $this->exists())
+            if( !$email && !$password && $this->exists())
             {
-               if( password_verify( $password, $this->_data->user_pass ) )
-               {
-                        echo "Login ok". '<br>';
-                   if($this->increment_visit_count($email)){
-                        error_log("UPDATE ERROR");
-                        die();
-                   }
-                   return true;
-                        //redirect("nav_bar.html")(;
-                        //redirect("http://api.ryanroper.com");
+                echo "Iam in<br>";
+                Session::put($this->_sessionName, $this->data()->user_email);
+            }
+            else
+            {
+                $user = $this->find($email);
+            
+                if($user) 
+                {
+                    //Check if a match
+                   if( Hash::verify_pw_hash( $password, $this->data()->user_pass ) )
+                   {
+                        Session::put($this->_sessionName, $this->data()->user_email);
+                        
+                        if(!$this->increment_visit_count($email)){
+                            error_log("UPDATE ERROR");
+                            die();
+                       }
+                       
+                       //Implementing rememberme.
+                       //This logic gets executed when a user hits submit button with
+                       //rememberme check box clicked.
+                       if($remember){
+                           
+                            //Check to see if user session data is in rememberme table. 
+                            $hashCheck = $this->_db->get('users_session', array('user_email', '=', $this->data()->user_email));
+                            
+                            //If the data is not in the remeberme table, insert a new row.
+                            if(!$hashCheck->count()){
+                                $hash = Hash::unique();     
+                               
+                                $this->_db->insert('users_session',
+                                                   array( 
+                                                          'user_email' => $this->data()->user_email,
+                                                          'hash' => $hash 
+                                                        ));
+                            }else{
+                                //Retrieve first hash data.  There shouldn't be more than 1.
+                                $hash = $hashCheck->first()->hash; 
+                            }
+                            
+                            Cookie::put($this->_cookieName, $hash, Config::get('remember/cookie_expiry'));
+                       }
+                       return true;
                     }
                 }
-
+            }
             return false;
+        } 
+    
+        public function exists(){
+           if(!empty($this->_data)) echo "_data exists";
+           else echo "_data doesn't exists";
+          //var_dump($this->_data);
+            return (!empty($this->_data)) ? true : false;
+        } 
+        //Getter for private member. 
+        public function data(){
+            return $this->_data;
+        }
+        
+        //Getter for private member. 
+        public function isLoggedIn(){
+            return $this->_isLoggedIn;
+        }
+        
+        public function logout(){
+            
+            //$this->_db->delete('users_session', array('user_email', '=', $this->data()->user_email ));
+            DB::getInstance()->query( "DELETE FROM users_session WHERE user_email = '" . $this->data()->user_email . "'" );
+            Cookie::delete($this->_cookieName);
+            Session::delete($this->_sessionName);
         }
     }
 ?>

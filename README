@@ -1,3 +1,7 @@
+PHP 7.0.10 
+Ubuntu 14.04
+MySQL 5.5.49
+
 FILE STRUCTURE
 --------------------
 
@@ -70,13 +74,19 @@ Maintainability of code
 Objects Relationship
 --------------------------
 No inheritance, no polymorphism, no composition.
-Objects 'uses' other objects.
+Encapsulation is implemented with private functions and members.
+
+All the relationship is 'use'. e.g. User object uses Session object.
+
 There are # objects with static functions.
 Since variables and functions are within scope
 there won't be any collisions.
 
 Objects Relationship Diagram
 -------------------------------
+
+Web page flow diagram
+-----------------------
 
 
 Design Pattern:
@@ -85,8 +95,23 @@ Uses Singleton Design pattern.
 This will enhance the effectiveness DB connection.
 Remember DB connection is the most expensive.
 
+Description of each class
+---------------------------
+
 DB.php
 ------
 This class packages SQL and executes SQL.
 This class avoids the code to implement tedious implementation of SQL statement.
 It is a wrapper to SQL.
+
+Variable name convention
+---------------------------
+Private variables start with underscore: e.g _user denotes this is a private variable.
+Try the camel convention: e.g. userName.
+
+
+Filename convention
+----------------------
+Filename and class name must match in order spl_autoload_register to work.
+Class file names always start with capital letter.
+Those files that are not capital are considered non class files.

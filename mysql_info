@@ -1,5 +1,9 @@
-mysql cli
+mysql-ctl cli
 
 use dblogin;
 show tables;
 
+tail -f  ~/lib/apache2/log/error.log`
+
+Ubuntu release
+lsb_release -a

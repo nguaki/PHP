@@ -96,6 +96,8 @@ class DB{
 			if( in_array( $operator, $operators ) )
 			{
 				$sql = "{$action} FROM {$table} WHERE {$field} {$operator} ?";
+			
+				echo "SQL = $sql <br>";
 				
 				//If there is an error, error() returns true.
 				//We want error() to return false which means DB operation was as
@@ -117,6 +119,7 @@ class DB{
 			
 	public function delete( $table, $where )
 	{
+		echo "Hello from delete<br>";
 		return $this->action( 'DELETE *', $table, $where );
 	}		
 	
@@ -205,9 +208,12 @@ class DB{
 			}
 		    
 			//Pacakage SQL statement for prepare stage.
-			$sql = "INSERT INTO users (`" . implode( '`, `' ,$keys) . "` ) VALUES ({$values})";
+			$sql = "INSERT INTO {$table} (`" . implode( '`, `' ,$keys) . "` ) VALUES ({$values})";
 			//$sql = "INSERT INTO users (`" . implode( '`, `' ,$keys) . "` ) VALUES ({$act_values})";
-		
+	
+			echo "$sql <br>";
+			var_dump($fields);
+			//die();
 			//Now send the SQL along with the associative array.
 			$empty_array = array();
 			//if( !$this->query( $sql, $empty_array)->error())
