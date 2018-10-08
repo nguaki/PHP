@@ -1,0 +1,31 @@
+PHP
+-------------------------------------------------
+
+(1)tail -f /home/ubuntu/lib/apache2/log/error.log
+   This log is not very helpful and outdated.
+   It does not have PHP application related errors.
+   But, any hint will save me a day.
+   Keep looking.
+   
+ (2)php_errors.log seems to be creating at thc current directory.
+    This log seems to capture all stdout errors to this file.
+    
+
+SQL
+--------------------------------------------------
+mysql-ctl cli
+
+use dblogin;
+show tables;
+
+
+LINUX
+-------------------------------------------------
+(1)Ubuntu release
+lsb_release -a
+
+(2).profile exists on home directory
+must source ~/.profile after a change 
+
+(3)Home directory is /home/ubuntu/workspace
+

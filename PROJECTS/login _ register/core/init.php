@@ -48,8 +48,6 @@ if(Cookie::exists(Config::get('remember/cookie_name')) && !Session::exists(Confi
 
     if( $dbObj->count() > 0 ){
     	$user = new User($dbObj->first()->user_email);
-    	echo "user = ";
-    	var_dump($user);
     	$user->login();
     } 
 }

@@ -25,6 +25,7 @@ if($user->isLoggedIn()){
         	
         	function getTemperature()
         	{
+        	    alert("someone call me");
         	    $.ajax(	
         	            {
         	                url: 'weather_info.php',
@@ -38,22 +39,49 @@ if($user->isLoggedIn()){
                     	  }
                   	    );
              }
-        </script>
+        
+            $('#city').on("keydown", function(e) {
+                if(e.keyCode == 13 ){
+                    alert("Enter pressed");
+                    return false;
+                }
+            });
+            function myFunction(e,textinput){
+                var code = (e.keyCode ? e.keyCode : e.which );
+                if(code == 13 ){
+    	            //clearInterval(timerID);
+                    //getTemperature();
+                    <?php weather_info.php;?>
+                }
+            }
+        </script> 
 </head>
 <body>
-		<li><a href="logout.php">Log out</a></li>
-		<li><a href="disp_stat.php">Display Most Freq Visitors</a></li>
+		<a href="disp_stat.php" target="_blank">Display Most Freq Visitors</a> &nbsp &nbsp &nbsp
+		<a href="logout.php">Log out</a>
         <p><span style="font-size: 50px" id="temp_field"></span></p>
+        <form action="weather_info.php" method="POST">
+            <label for="city">City</label> 
+            <input type="text" name="city" id="city" onkeypress="myFunction(event,this)">
+            <label for="country">Country</label> 
+            <input type="text" name="country" id="country" onkeypress="myFunction(event,this)">
+            <input type="submit" value="Enter">
+        </form>
+        
 </body>
 </html>
 <?php
     //Translate API call interval in millisec.
     $total_milli_sec =  APICallInterval::getInMillisec();  
     
+	//Display temperature immediately.
 	echo '<script>getTemperature();</script>';
+	//Set repetition.
 	echo '<script>timerID = setInterval("getTemperature()",'. $total_milli_sec . ');</script>';
 } else{
+        //Stop the AJAX scheduled call.
     	echo '<script>clearInterval(timerID);</script>';
-		echo '<p>You need to either <a href="login.php">login</a> or <a href="register.php">register</a></p>';
+    	
+		echo '<p>You need to either <a href="login_fe_ajax.php">login</a> or <a href="register_fe_ajax.php">register</a></p>';
 }
 ?>

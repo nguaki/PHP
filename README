@@ -38,24 +38,42 @@ You can enter more data through registration.
 
 Layers of security
 -------------------
-FIEO - Filter In Escape Out was practiced.
-All inputs are filterd and all outputs to the brower were escaped.
+- All passwords in the DB are encrypted with salt.
 
-Another layer of SQL injection was implemented with implementation of 
+- FIEO - Filter In Escape Out was practiced.
+All inputs are validated and filterd and all outputs to the brower were escaped.
+In this case, email and user names are validated and filtered.
+
+- Another layer of SQL injection was implemented with implementation of 
 PDO prepare statement and binding valuew.
 
-CSRF injection prevention was implemented with token checks.
+- CSRF injection prevention was implemented with token checks.
 
-Performance
----------------
+Scalability and Performance
+--------------------------------------
 Implementation of Singleton should eliminate unnecessary DB connection.
+Database tables are indexed on the columns that use SELECT statement.
+In this project, they are email column.
+For the most visit stat report, visit_count is indexed.
+Key value hash map data structure is used.  In this case, passwords match and also
+verifying if inputs meet all the input requirements.
+This makes the searching very fast which is time complexity of O(1).
+Although, the data we used is very little, it can make a dramatic impact on a huge
+data.
+
+Expandability
+---------------
+Created a report interface call IReport to extend more reports.
+Report has similar pattern: Query and Format.
 
 Testability
 ---------------
-Try to follow SOLID principle.
+Try to follow SOLID principle for each class and each methods.
 Single responsibility per class per method.
-Should be easy to test.
+Should be easy to test.  Some tests require test setup such as setting up $_SESSION[] variables and etc.
+
 Please refer to test strategy of each module.
+Wrote a sample of unit tests. 
 
 Maintainability of code
 -------------------------
@@ -88,8 +106,15 @@ Objects Relationship Diagram
 Web page flow diagram
 -----------------------
 
+AJAX communication returning JSON
+-----------------------------------
+PHP backend scripts return in JSON.
+So there is a lot of room for expansion in
+data which translates into more front end
+functions.
 
-Design Pattern:
+
+Design Pattern
 --------------------
 Uses Singleton Design pattern.
 This will enhance the effectiveness DB connection.
@@ -115,3 +140,14 @@ Filename convention
 Filename and class name must match in order spl_autoload_register to work.
 Class file names always start with capital letter.
 Those files that are not capital are considered non class files.
+
+Rooms for Improvement 
+-----------------------
+Inputs validation can be more centralized.
+Input rules can be inserted into init.php.
+Just read the rules from init.php instead of explicitly
+defining it in the code.
+More tests - especially the implementation of penetrating tests on UI.
+
+Suggestion of testing Remember ME
+------------------------------------
