@@ -1,9 +1,10 @@
 <?php    
     //Front End for Login Registration.
-    //Utilize AJAX call.
+    //Utilizes AJAX call.
     
     //Need for Token::generate().
     require_once "../core/init.php";
+    
 ?>
 <!DOCTYPE HTML>
 <html lang="en">
@@ -38,43 +39,12 @@
        <input type="hidden" name="token" id="token" value="<?php echo Token::generate();?>">
 
        <input type="submit" value="Register">
-   </form>
-    <script type="text/javascript">
-        /*global $*/
-        $("#RegiForm").submit(function(event) {
-
-      /* stop form from submitting normally */
-      event.preventDefault();
-
-      /* get the action attribute from the <form action=""> element */
-      var $form = $( this ),
-          url = $form.attr( 'action' );
-         alert(url);
-      /* Send the data using post with element id name and name2*/
-      var posting = $.post( url, { email: $('#email').val(),
-                                   password: $('#password').val(),
-                                   password_again: $('#password_again').val(),
-                                   user_name:$('#user_name').val(),
-                                   token: $('#token').val()
-                                 } 
-                            );
-
-      /* Alerts the results */
-      posting.done(function( data ) {
-          //alert("success");
-          alert(data);
-          var data = JSON.parse(data);
-          $('#error_field1').html(data.invalid_email);
-          $('#error_field').html(data.error);
-          //window.location = data.new_page;
-          //var string_data = JSON.stringify(data);
-          //alert(String(data.new_page));
-          if(data.new_page){
-            window.location = String(data.new_page);
-          }
-        });
-      });
-
+    </form>
+    <script type="text/javascript" src="JS/regi_ajax_call.js">
     </script>
 </body>
 </html>
+<?php
+	echo '<p><a href="login_fe_ajax.php">login</a></p>';
+
+?>

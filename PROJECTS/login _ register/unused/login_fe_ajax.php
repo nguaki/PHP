@@ -4,7 +4,6 @@
     
     //Need for Token::generate().
     require_once "../core/init.php";
-    unset ($_SESSION['clean_data']);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +17,6 @@
 </head>
 <body>
     <form action="login_be_ajax.php" method="POST" id="loginForm">
-        <p><span style="font-size: 20px" id="error_field1"></span></p>
         <p><span style="font-size: 20px" id="error_field"></span></p>
         <div class="field">
             <label for="email">Email</label>
@@ -35,7 +33,10 @@
             <input type="hidden" name="token" id="token" value="<?php echo Token::generate(); ?>">
             <input type="submit" value="Log In">
     </form>
-    <script type="text/javascript" src="JS/ajax_call.js">
+    <script type="text/javascript" src="JS/login_ajax_call.js">
     </script>
 </body>
 </html>
+<?php
+	echo '<p><a href="index.php">Home</a></p>';
+?>

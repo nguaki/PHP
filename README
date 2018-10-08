@@ -65,6 +65,10 @@ Expandability
 ---------------
 Created a report interface call IReport to extend more reports.
 Report has similar pattern: Query and Format.
+Frontend and backend communication is done via AJAX.
+PHP backend scripts return in JSON.
+So there is a lot of room for expansion in
+data which translates into more front end functions.
 
 Testability
 ---------------
@@ -74,6 +78,17 @@ Should be easy to test.  Some tests require test setup such as setting up $_SESS
 
 Please refer to test strategy of each module.
 Wrote a sample of unit tests. 
+
+For testing the web, not the functions, need to automate this as well using
+PHP webdriver.
+
+The number of cases to test a simple registration is huge.  
+The form looks simple with just 4 inputs.
+But the permuatation of cases is not simple at all.
+There are 4! cases to test this.
+That is 4*3*2*1 = 24 cases.
+Testing this manually is just a monumental task by a human.
+Need to automate web testing.
 
 Maintainability of code
 -------------------------
@@ -92,13 +107,18 @@ Maintainability of code
 Objects Relationship
 --------------------------
 No inheritance, no polymorphism, no composition.
+One interface for reporting.
 Encapsulation is implemented with private functions and members.
 
 All the relationship is 'use'. e.g. User object uses Session object.
 
 There are # objects with static functions.
-Since variables and functions are within scope
-there won't be any collisions.
+Since variables and functions are within scope,
+there won't be any collisions with functions and variables.
+
+Design Pattern
+--------------------
+Uses Singleton Design pattern.
 
 Objects Relationship Diagram
 -------------------------------
@@ -106,19 +126,8 @@ Objects Relationship Diagram
 Web page flow diagram
 -----------------------
 
-AJAX communication returning JSON
------------------------------------
-PHP backend scripts return in JSON.
-So there is a lot of room for expansion in
-data which translates into more front end
-functions.
 
 
-Design Pattern
---------------------
-Uses Singleton Design pattern.
-This will enhance the effectiveness DB connection.
-Remember DB connection is the most expensive.
 
 Description of each class
 ---------------------------
@@ -129,17 +138,16 @@ This class packages SQL and executes SQL.
 This class avoids the code to implement tedious implementation of SQL statement.
 It is a wrapper to SQL.
 
+Filename convention
+----------------------
+Files with class definition always start with capital letter.
+Filename and class name must match in order for spl_autoload_register to work.
+
+Those files that are not capital are considered non class files.
+
 Variable name convention
 ---------------------------
 Private variables start with underscore: e.g _user denotes this is a private variable.
-Try the camel convention: e.g. userName.
-
-
-Filename convention
-----------------------
-Filename and class name must match in order spl_autoload_register to work.
-Class file names always start with capital letter.
-Those files that are not capital are considered non class files.
 
 Rooms for Improvement 
 -----------------------

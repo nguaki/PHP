@@ -16,7 +16,7 @@
         if(Token::check($clean_token))
         {
             
-            //if not empty.
+            //if email input is not empty.
             if( isset($_POST['email']) && !empty($_POST['email'])){
                 //if invalid, return.
                 if(!Validate::checkEmail($_POST['email'])){
@@ -24,15 +24,8 @@
                     echo json_encode($data);
                     return;
                 }
-                //echo 'before sanitize';
-                //var_dump($_POST);
-                //Sanitize both valid nor invalid eail.
-                //$_SESSION['clean_data']['email'] =   Validate::sanitizeEmail($_POST['email']);
+                //Sanitize both valid nor invalid email.
                 $_POST['email'] =   Validate::sanitizeEmail($_POST['email']);
-                    //echo json_encode($data);
-                    //return;
-                //echo 'after sanitize';
-                //var_dump($_POST);
             }
             //No need to sanitize password.
             $_SESSION['clean_data']['password'] = $_POST['password'];

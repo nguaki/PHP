@@ -4,70 +4,102 @@ require_once '../core/init.php';
 //First time call, it will display success message and then delete the message.
 //When the browser refreshes, the message is no longer there.
 
-if(Session::exists('success'))
-	echo Session::flash('success');
-	
-if(Session::exists('home'))
-	echo Session::flash('home');
+//Note that ordering of jQuery link coming first is important.
 
 	
 $user = new User();
+
+//If user is logged, display the temperature by default.
+
 if($user->isLoggedIn()){
 ?>
-
 <!DOCTYPE html>
-<html>
-<head>
-        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>City Temperature</title>
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+  </head>
+  
+  <body>
+  <nav class="navbar navbar-inverse">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="disp_stat.php" target="_blank">Visitor Stat</a>
+          <a class="navbar-brand" href="logout.php">Logout</a>
+        </div>
+    </nav>
+     
+   <div class="container">
+        <p><span style="font-size: 50px" id="temp_field"></span></p>
+	</div>	
+   <div class="container">
+        <form action="weather_info.php" method="POST" id="weatherForm">
+            <label for="city">City</label> 
+            <input type="text" name="city" id="city">
+            <label for="country">Country</label> 
+            <input type="text" name="country" id="country">
+            <input type="submit" value="Enter">
+        </form>
+   </div>     
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
-        <script>
+        <script type="text/javascript">
         	/*global $;*/
         	
+        	//Initial call uses default city and country form config file.
         	function getTemperature()
         	{
-        	    alert("someone call me");
+        	    //alert("someone call me");
         	    $.ajax(	
         	            {
         	                url: 'weather_info.php',
         	                type: 'POST',
         	                dataType: 'text',
-                  	        success: function (response)
+                            success: function (response)
                     	    {
-                    	        //alert(response);
+                                //alert(response);
                     	        $('#temp_field').html(response);
                     	    }
                     	  }
                   	    );
              }
-        
-            $('#city').on("keydown", function(e) {
-                if(e.keyCode == 13 ){
-                    alert("Enter pressed");
-                    return false;
-                }
+             
+        $("#weatherForm").submit(function(event) 
+        {
+            /*global $*/
+    	    clearInterval(timerID);
+
+            /* stop form from submitting normally */
+            event.preventDefault();
+
+            /* get the action attribute from the <form action=""> element */
+            var $form = $( this ),
+            url = $form.attr( 'action' );
+            
+            /* Send the data using post with element id name and name2*/
+            var posting = $.post( url, { city: $('#city').val(), country: $('#country').val() } );
+
+            /* Alerts the results */
+            posting.done(function( data ) {
+                //alert(data); 
+                $('#temp_field').html(data); 
+                
             });
-            function myFunction(e,textinput){
-                var code = (e.keyCode ? e.keyCode : e.which );
-                if(code == 13 ){
-    	            //clearInterval(timerID);
-                    //getTemperature();
-                    <?php weather_info.php;?>
-                }
-            }
-        </script> 
-</head>
-<body>
-		<a href="disp_stat.php" target="_blank">Display Most Freq Visitors</a> &nbsp &nbsp &nbsp
-		<a href="logout.php">Log out</a>
-        <p><span style="font-size: 50px" id="temp_field"></span></p>
-        <form action="weather_info.php" method="POST">
-            <label for="city">City</label> 
-            <input type="text" name="city" id="city" onkeypress="myFunction(event,this)">
-            <label for="country">Country</label> 
-            <input type="text" name="country" id="country" onkeypress="myFunction(event,this)">
-            <input type="submit" value="Enter">
-        </form>
-        
+        });
+        </script>
+        <script src="JS/bootstrap.min.js"></script>
 </body>
 </html>
 <?php
@@ -76,12 +108,58 @@ if($user->isLoggedIn()){
     
 	//Display temperature immediately.
 	echo '<script>getTemperature();</script>';
-	//Set repetition.
+	//Set repetition with AJAX.
 	echo '<script>timerID = setInterval("getTemperature()",'. $total_milli_sec . ');</script>';
-} else{
-        //Stop the AJAX scheduled call.
+} 
+
+//If no one is logged, display menu items.
+
+else
+{
+?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Cheat Sheet</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .navbar{
+        margin-bottom:0;
+        border-radius:0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="login_fe_ajax_boot.php">Login</a>
+          <a class="navbar-brand" href="register_fe_ajax_boot.php">Register</a>
+        </div>
+    </nav>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+<?php
+//Stop the AJAX scheduled call.
     	echo '<script>clearInterval(timerID);</script>';
     	
-		echo '<p>You need to either <a href="login_fe_ajax.php">login</a> or <a href="register_fe_ajax.php">register</a></p>';
+		//echo '<p>You need to either <a href="login_fe_ajax.php">login</a> or <a href="register_fe_ajax_boot.php">register</a></p>';
+		//echo '<ul class="list-inline">';
+	    //echo '<li><a href="login_fe_ajax.php">Login</a></li>';
+	    //echo '<li><a href="register_fe_ajax_boot.php">Register</a></li>';
+		//echo '</ul>';
 }
 ?>

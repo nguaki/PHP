@@ -17,10 +17,33 @@
         //Proceed with registration if CSRF attack is not an issue.
        if (Token::check($clean_token))
        {
-            //$Validation = new Validate();
-              $inputRules   = new InputRules();
+            //if email input is not empty.
+            if( isset($_POST['email']) && !empty($_POST['email'])){
+                //if invalid, return.
+                if(!Validate::checkEmail($_POST['email'])){
+                    $data['error'] = 'Invalid Email';
+                    echo json_encode($data);
+                    return;
+                }
+                //Sanitize both valid nor invalid email.
+                $_POST['email'] =   Validate::sanitizeEmail($_POST['email']);
+            }
+            
+            //if username input is not empty.
+            if( isset($_POST['user_name']) && !empty($_POST['user_name'])){
+                //if invalid, return.
+                if(!Validate::checkUserName($_POST['user_name'])){
+                    $data['error'] = 'Username should contain only alphanumeric.';
+                    echo json_encode($data);
+                    return;
+                }
+                //There is no need to sanitize username.  If it passes thru validation,
+                //this should be sufficient.
+            }
+            
+            $inputRules   = new InputRules();
      
-             $inputRules->check( $_POST, array(
+            $inputRules->check( $_POST, array(
                                            'email' => array(
                                                               'required' => true,
                                                               'min'      => 2,
@@ -49,32 +72,29 @@
                  
                 $user = new User();
                 
-                try{
+                try
+                {
                     //Insert a new row of data for a user.
                     $user->create( 
-                                array( 
-                                        'user_email'=> $_POST['email'],
-                                        'user_name'=> $_POST['user_name'],
-                                        'user_pass' => $hash,
-                                        'visit_count' => 0
-                                    )
-                            );
+                                    array( 
+                                            'user_email'=> $_POST['email'],
+                                            'user_name'=> $_POST['user_name'],
+                                            'user_pass' => $hash,
+                                            'visit_count' => 0
+                                         )
+                                  );
                     //Session::flash('success', 'You registered successfully!');
                     Session::flash('home', 'You registered successfully! Please log in.');
-                } catch( Exception $e ){
+                    $data['error'] = 'Congratulations! You are registered.';
+                    echo json_encode($data);
+                } 
+                catch( Exception $e )
+                {
                     //Redirect::to(404);
                     $data['new_page'] = 'index.php';                           
                     echo json_encode($data);
                     die($e->getMessage());
                 }         
-                //if(!DB::getInstance()->insert('users', $field)) 
-                //    echo "insert failed";
-                    
-                /*else
-                {
-                    Session::flash('success', 'You registered successfully!');
-                    header('Location: index.php');
-                }*/
             }else{
                 $data['error'] = "";
  

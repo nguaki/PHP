@@ -42,3 +42,13 @@
 [07-Oct-2018 08:45:23 UTC] PHP Fatal error:  Call to undefined method Validate::check() in /home/ubuntu/workspace/PROJECTS/login _ register/includes/register_works.php on line 12
 [07-Oct-2018 08:45:23 UTC] PHP Stack trace:
 [07-Oct-2018 08:45:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/register_works.php:0
+[08-Oct-2018 03:47:32 UTC] PHP Parse error:  syntax error, unexpected 'inside' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php on line 10
+[08-Oct-2018 05:14:31 UTC] PHP Parse error:  syntax error, unexpected '$clean' (T_VARIABLE) in /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php on line 12
+[08-Oct-2018 05:21:11 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN), expecting ',' or ';' in /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php on line 26
+[08-Oct-2018 05:22:36 UTC] PHP Warning:  file_get_contents(http://api.openweathermap.org/data/2.5/weather?q=San Francis,US&appid=e44e3488ccc2774c03bddffbb8161aed): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/ubuntu/workspace/PROJECTS/login _ register/classes/Weather.php on line 14
+[08-Oct-2018 05:22:36 UTC] PHP Stack trace:
+[08-Oct-2018 05:22:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:0
+[08-Oct-2018 05:22:36 UTC] PHP   2. Weather->__construct($url = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php:40
+[08-Oct-2018 05:22:36 UTC] PHP   3. file_get_contents(*uninitialized*) /home/ubuntu/workspace/PROJECTS/login _ register/classes/Weather.php:14
+[08-Oct-2018 05:40:14 UTC] PHP Parse error:  syntax error, unexpected '==' (T_IS_EQUAL) in /home/ubuntu/workspace/PROJECTS/login _ register/includes/weather_info.php on line 51
