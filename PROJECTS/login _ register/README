@@ -4,36 +4,105 @@ MySQL 5.5.49
 
 FILE STRUCTURE
 --------------------
+├── classes
+│   ├── APICallInterval.php
+│   ├── Config.php
+│   ├── Cookie.php
+│   ├── DB.php
+│   ├── Hash.php
+│   ├── IReport.php
+│   ├── Input.php
+│   ├── InputRules.php
+│   ├── MostVisitsReport.php
+│   ├── Redirect.php
+│   ├── Session.php
+│   ├── Token.php
+│   ├── User.php
+│   ├── Validate.php
+│   └── Weather.php
+├── core
+│   └── init.php
+├── disp_temp.html
+├── functions
+│   └── sanitize.php
+├── includes
+│   ├── JS
+│   │   ├── bootstrap.min.js
+│   │   ├── login_ajax_call.js
+│   │   └── regi_ajax_call.js
+│   ├── css
+│   │   └── bootstrap.min.css
+│   ├── disp_stat.php
+│   ├── errors
+│   │   └── 404.php
+│   ├── index.php
+│   ├── login_be_ajax.php
+│   ├── login_fe_ajax_boot.php
+│   ├── logout.php
+│   ├── register_be_ajax.php
+│   ├── register_fe_ajax_boot.php
+│   ├── register_works.php
+│   └── weather_info.php
+└── test
+    ├── classes
+    │   ├── ValidateTest.php
 
 
 
-Modify core/init.php
+Configure DB related info core/init.php
 
-	//'host' => '127.0.0.1',
-    'host' => getenv('IP'),
-	//'username' => 'root',
-	'username' => getenv('C9_USER'),
+	'host' => '127.0.0.1',
+	'username' => 'root',
 	'password' => '',
 	'db' => 'dblogin',
 	'dbport' => 3306
 	
 Database table relationship
 ------------------------------
++-------------+--------------+------+-----+---------+----------------+
+| Field       | Type         | Null | Key | Default | Extra          |
++-------------+--------------+------+-----+---------+----------------+
+| user_id     | int(11)      | NO   | PRI | NULL    | auto_increment |
+| user_name   | varchar(255) | NO   | UNI | NULL    |                |
+| user_email  | varchar(60)  | NO   | UNI | NULL    |                |
+| user_pass   | varchar(255) | NO   |     | NULL    |                |
+| visit_count | int(11)      | NO   | MUL | NULL    |                |
++-------------+--------------+------+-----+---------+----------------+
+
++------------+--------------+------+-----+---------+-------+
+| Field      | Type         | Null | Key | Default | Extra |
++------------+--------------+------+-----+---------+-------+
+| user_email | varchar(60)  | NO   | PRI | NULL    |       |
+| hash       | varchar(255) | NO   |     | NULL    |       |
++------------+--------------+------+-----+---------+-------+
+
+2 tables relate based on user_email.
 
 
 Create table using following scripts
 ------------------------------------------
+CREATE TABLE `users` (
+  `user_id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_name` varchar(255) NOT NULL,
+  `user_email` varchar(60) NOT NULL,
+  `user_pass` varchar(255) NOT NULL,
+  `visit_count` int(11) NOT NULL,
+  PRIMARY KEY (`user_id`),
+  UNIQUE KEY `user_name` (`user_name`),
+  UNIQUE KEY `user_email` (`user_email`),
+  KEY `email` (`user_email`),
+  KEY `visits` (`visit_count`)
+) ENGINE=MyISAM AUTO_INCREMENT=44 DEFAULT CHARSET=latin1 
 
-Create indes using following script
------------------------------------------
+CREATE TABLE `users_session` (
+  `user_email` varchar(60) NOT NULL,
+  `hash` varchar(255) NOT NULL,
+  PRIMARY KEY (`user_email`),
+  UNIQUE KEY `user_email` (`user_email`),
+  KEY `email` (`user_email`)
+) ENGINE=MyISAM AUTO_INCREMENT=35 DEFAULT CHARSET=latin1
 
-
-Enter these data using these scripts
---------------------------------------
-
-
-You can enter more data through registration.
-
+Enter users data using registration function.
 
 
 Layers of security
@@ -156,6 +225,3 @@ Input rules can be inserted into init.php.
 Just read the rules from init.php instead of explicitly
 defining it in the code.
 More tests - especially the implementation of penetrating tests on UI.
-
-Suggestion of testing Remember ME
-------------------------------------
