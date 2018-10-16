@@ -5,7 +5,7 @@
 	 stoponFailure="false">
 	<testsuites>
 		<testsuite name="Test suite">
-			<directory>tests</directory>
+			<directory suffix="Test.php">/home/ubuntu/workspace/PHPUNIT/tests/*</directory>
 		</testsuite>
 	</testsuites>
 </phpunit>
