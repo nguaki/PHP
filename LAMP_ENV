@@ -29,3 +29,6 @@ must source ~/.profile after a change
 
 (3)Home directory is /home/ubuntu/workspace
 
+//USE very cautiously.
+Run this first: find .  -name "php_errors.log" -type f 
+find .  -name "php_errors.log" -type f -delete 
