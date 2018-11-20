@@ -34,7 +34,7 @@
                 self::delete($name);
                 return $session;
             }else{
-                self::put($name,$string);
+                return self::put($name,$string);
             }
         }
     }

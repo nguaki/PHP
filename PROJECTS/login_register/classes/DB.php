@@ -1,5 +1,5 @@
 <?php
-require_once '../core/init.php';
+//require_once '../core/init.php';
 
 class DB{
 	private static $_instance1 = null; 

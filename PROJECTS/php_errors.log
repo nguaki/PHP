@@ -1,0 +1,15 @@
+[21-Oct-2018 06:24:44 UTC] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) in /home/ubuntu/workspace/PROJECTS/login_register/tests/APICallIntervalTest.php on line 18
+[21-Oct-2018 06:25:18 UTC] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) in /home/ubuntu/workspace/PROJECTS/login_register/tests/APICallIntervalTest.php on line 18
+[21-Oct-2018 21:30:59 UTC] PHP Parse error:  syntax error, unexpected ''get'' (T_CONSTANT_ENCAPSED_STRING), expecting variable (T_VARIABLE) in /home/ubuntu/workspace/PROJECTS/login_register/tests/InputTest.php on line 10
+[21-Oct-2018 21:32:49 UTC] PHP Fatal error:  Cannot redeclare InputTest::test_empty_input_post_exists() in /home/ubuntu/workspace/PROJECTS/login_register/tests/InputTest.php on line 14
+[22-Oct-2018 04:56:42 UTC] PHP Warning:  Uncaught require_once(../core/init.php): failed to open stream: No such file or directory
+
+/home/ubuntu/workspace/PROJECTS/login_register/classes/DB.php:2
+/home/ubuntu/workspace/PROJECTS/login_register/classes/DB.php:2
+/home/ubuntu/workspace/PROJECTS/login_register/tests/init.php:35
+/home/ubuntu/workspace/PROJECTS/login_register/classes/InputRules.php:11
+/home/ubuntu/workspace/PROJECTS/login_register/tests/InputRulesTest.php:9
+
+  thrown in /home/ubuntu/workspace/PROJECTS/login_register/classes/DB.php on line 2
+[22-Oct-2018 04:56:42 UTC] PHP Fatal error:  PHPUnit_Util_Fileloader::main(): Failed opening required '../core/init.php' (include_path='.:/home/ubuntu/.phpbrew/php/php-7.0.10/lib/php') in /home/ubuntu/workspace/PROJECTS/login_register/classes/DB.php on line 2
+[22-Oct-2018 17:44:02 UTC] PHP Fatal error:  Cannot declare class ConfigTest, because the name is already in use in /home/ubuntu/workspace/PROJECTS/login_register/tests/TokenTest.php on line 11

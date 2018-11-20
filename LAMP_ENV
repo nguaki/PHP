@@ -18,6 +18,9 @@ mysql-ctl cli
 use dblogin;
 show tables;
 
+mysql credential
+username:dguai
+password:""   <=Empty string
 
 LINUX
 -------------------------------------------------

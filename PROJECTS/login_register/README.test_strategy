@@ -1,0 +1,122 @@
+APICallInterval.php         done   (Can expand on refresh rate)
+Config.php                  done  
+Cookie.php                 
+                Cannot set cookie() in PHPUNIT.
+                Error message:Cannot modify header information - headers already sent by
+                setcookie() does not set $_COOKIE[] in phpunit.
+                Need to revisit this. Is seems that $_COOKIE doesn't get setup when called from
+                PHPUNIT. 
+                
+DB.php          Need to study indepth about testing DB.  There is a lot of reading in PHPUNIT.
+Hash.php        done
+Input.php       done
+InputRules.php  Having all kinds of problems.  Getting PDO exception: Cannot find driver.
+                Read all documents.  php -m says that I don't have PDO_mysql.
+                Tried to install PDO_mysql, but Ubuntu cannot locate  package errors.
+                Workaround is to use mockery.  Implement Mockery and see if this works for
+                DB testing.
+                Things to do:
+                1. Read SF.com on PHPunit DB testing
+                2. Read PHPunit manual on DB testing.
+                3. Post questions to SF, Cloud9.
+                
+                Youtube source:
+                1. series of 12 on laravel.(Bitfumes Webnologies)
+                2. UK conference on PHPUNIT
+                3. How to test models using PHPUNIT Testing Framework
+                4. Hands-on Unit testing with PHPUNIT (Tuts+Code)
+
+                php7enmod -s cli pdo_mysql  -  bash: php7enmod: command not found               
+                sudo apt-get install php5.0-gd php5.0-mysql
+                
+                phpenmod -s cli pdo_mysql - command not found 
+                php5enmod -s cli pdo_mysql - No error but php -m doesn't have it.
+                sudo apt-get install php5.0-gd php5.0-mysql - Error message.
+                sudo apt-get install php7.0-mysql - Error message
+                sudo apt-get update
+                sudo apt-get install php7.0-gd php7.0-mysql
+               
+                php.ini has only pod_odbc.  it is commented out.
+                
+                sudo apt-get install php-mysql
+                
+                Reading package lists... Done
+                
+Building dependency tree       
+Reading state information... Done
+E: Unable to locate package php-mysql
+
+                 sudo apt-get install php5-mysql   <==== This command installed something.
+                 I executed php5enmod -s cli pdo_mysql - No error but php -m doesn't have it.
+                 I also executed  InputRulesTest.php, still getting "drivers not found" error.
+                
+                 Also discovered that PHP_info() has PDO_MYSQL active.
+                 /etc/php5/mod5-available/pdo_mysql.ini has the line
+                        extension=pdo_mysql.so
+                        
+                Do man php
+                php -m (modules)
+                
+                /etc/php5/cli/php.ini   <- Confi file for CLI version
+                /etc/php5/cgi/php.ini   <- Confi file for CGI version
+                /etc/php5/apache/php.ini   <- Confi file for Apache version
+                
+Contains following lines
+[Pdo_mysql]
+; If mysqlnd is used: Number of cache slots for the internal result set cache
+; http://php.net/pdo_mysql.cache_size
+pdo_mysql.cache_size = 2000
+
+; Default socket name for local MySQL connects.  If empty, uses the built-in
+; MySQL defaults.
+; http://php.net/pdo_mysql.default-socket
+pdo_mysql.default_socket=
+    
+    php --ri pdo   -> PDO support => enabled
+                      PDO drivers =>  
+    sudo apt-get install php5-cli
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+php5-cli is already the newest version.
+0 upgraded, 0 newly installed, 0 to remove and 375 not upgraded.
+                 
+                 sudo apt-get install php5-mysql
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+php5-mysql is already the newest version.
+0 upgraded, 0 newly installed, 0 to remove and 375 not upgraded.
+
+sudo apt-cache search php5 --- lists all php5 modules.
+
+dguai:/etc/php5/apache2 $ php5enmod  -s -v cli pdo_mysql                                                                                                                
+WARNING: Module cli ini file doesn't exist under /etc/php5/mods-available
+WARNING: Invalid SAPI specified
+usage: php5query [ -q ] -s sapi_name [ -m module_name ] [ -M ] [ -S ]
+WARNING: Directory /etc/php5/-v/conf.d doesn't exist, not enabling the module
+dguai:/etc/php5/apache2 $ php5query -s cli -m pdo_mysql
+pdo_mysql (Enabled for cli by local administrator)
+
+
+IReport.php     This is an abstract class.  There is no need to test this.               
+
+MostVisitsReport.php  Deals with DB.
+                      This maybe okay with mockery.
+                      
+Redirect.php        Need to read.  This is not easy as I thought.
+                    Source: stackoverflow.com, google search has Laravel.
+                    Seems like not an easy subject.
+                    Must understand the content of a web page after a redirect.
+                    
+Session.php         Done
+
+Token.php           Done
+                     
+User.php            Need to get DB connection established from PHPUNIT.
+                    Testing is another huge part of IT.
+                    It is not a light matter.
+                    
+Validate.php        Done
+
+Weather

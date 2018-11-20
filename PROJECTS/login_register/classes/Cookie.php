@@ -4,13 +4,17 @@
            return (isset($_COOKIE[$name])) ? true : false;
         }
         public static function get ($name){
-           return $_COOKIE[$name];
+           return (isset($_COOKIE[$name])&&!empty($_COOKIE[$name])) ? $_COOKIE[$name] : false;
+           //return $_COOKIE[$name];
         }
         public static function put( $name, $value, $expiry ){
-           return ( setcookie( $name, $value, time() + $expiry, '/' ) ) ? true : false;
+            
+           $CookiSet = setcookie( $name, $value, time() + $expiry, '/' );
+           //var_dump($_COOKIE);
+           return $CookiSet;
         }
         public static function delete( $name ){
-           self::put( $name, "", time()-1);
+           return self::put( $name, "", time()-1);
         }
     }
 

@@ -4,9 +4,9 @@
 
     class ConfigTest extends \PHPUnit_Framework_TestCase
     {
-        public function test_config_data_is_read_correctly()
+        public function test_token_data_is_generated()
         {
-            $this->assertEquals( 'min', Config::get('weather/unit_time'));
+            $this->assertEquals( 'min', Token::get('weather/unit_time'));
             $this->assertEquals( 1, Config::get('weather/refresh_rate'));
             $this->assertEquals( 'kansas city', Config::get('weather/city'));
         }

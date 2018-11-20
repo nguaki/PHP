@@ -1,0 +1,15 @@
+-after creating composer.json, run 
+	composer install
+
+-after creating a class file under src directory, run
+	composer du
+
+	(du for dump).
+
+	Note that vendor/autoload_classmap.php now has new Namespace and file array.
+
+- again the importance of phpunit.xml  bootstrap xml configuration
+
+- execute composer du from time to time.  For some reasons, phpunit works.
+
+- After modifying composer.json,  must run 'composer update'.

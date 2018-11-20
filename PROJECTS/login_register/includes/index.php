@@ -155,11 +155,5 @@ else
 <?php
 //Stop the AJAX scheduled call.
     	echo '<script>clearInterval(timerID);</script>';
-    	
-		//echo '<p>You need to either <a href="login_fe_ajax.php">login</a> or <a href="register_fe_ajax_boot.php">register</a></p>';
-		//echo '<ul class="list-inline">';
-	    //echo '<li><a href="login_fe_ajax.php">Login</a></li>';
-	    //echo '<li><a href="register_fe_ajax_boot.php">Register</a></li>';
-		//echo '</ul>';
 }
 ?>

@@ -13,6 +13,12 @@ class InputRules{
     
     //input parameters
     //   @source : implies either $_POST or $_GET.
+    //   Example of input:  check($_POST, 
+    //                               array(
+    //                                      'email'   => array('required' => true),
+    //                                      'password'=> array('required' => true)
+    //                                     )
+
     public function check( $source, $items = array() ) 
     {
         foreach($items as $input_name => $rule_set){

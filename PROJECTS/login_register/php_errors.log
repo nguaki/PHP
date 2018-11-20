@@ -1,0 +1,8 @@
+[22-Oct-2018 14:57:02 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/PROJECTS/login_register/classes/DB.php on line 55
+[22-Oct-2018 14:57:02 UTC] PHP Stack trace:
+[22-Oct-2018 14:57:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/PROJECTS/login_register/includes/login_be_ajax.php:0
+[22-Oct-2018 14:57:02 UTC] PHP   2. User->__construct($user = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login_register/includes/login_be_ajax.php:45
+[22-Oct-2018 14:57:02 UTC] PHP   3. User->find($email = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login_register/classes/User.php:20
+[22-Oct-2018 14:57:02 UTC] PHP   4. DB->get($table = *uninitialized*, $where = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login_register/classes/User.php:48
+[22-Oct-2018 14:57:02 UTC] PHP   5. DB->action($action = *uninitialized*, $table = *uninitialized*, $where = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login_register/classes/DB.php:117
+[22-Oct-2018 14:57:02 UTC] PHP   6. DB->query($sql = *uninitialized*, $params = *uninitialized*) /home/ubuntu/workspace/PROJECTS/login_register/classes/DB.php:106

@@ -8,8 +8,9 @@ class Weather
             $_Kel,
             $_json,
             $_data;
+            
+            
     public function __construct($url){
-
             
             $this->_json = file_get_contents($url);
             
